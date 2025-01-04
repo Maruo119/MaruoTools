@@ -1,0 +1,296 @@
+[
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda1.java",
+        "line_number": 30,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(lineImage(), 10,10, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda1.java",
+        "line_number": 31,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(rectImage(), 300, 80, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda1.java",
+        "line_number": 43,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "draw(graphics);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda1.java",
+        "line_number": 47,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "void draw(Graphics2D g);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda1.java",
+        "line_number": 51,
+        "function_declaration": "static BufferedImage lineImage() {",
+        "line_content": "return ((ImageDrawer) g -> g.drawLine(10, 10, 220, 180)).createImage();",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda1.java",
+        "line_number": 55,
+        "function_declaration": "static BufferedImage rectImage() {",
+        "line_content": "return ((ImageDrawer) g -> g.drawRect(10, 10, 220, 180)).createImage();",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 30,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(lineImage(), 10,10, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 31,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(rectImage(), 300, 80, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 42,
+        "function_declaration": "static abstract class ImageDrawer {",
+        "line_content": "draw(graphics);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 46,
+        "function_declaration": "static abstract class ImageDrawer {",
+        "line_content": "abstract void draw(Graphics2D g);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 51,
+        "function_declaration": "static class LineDrawer extends ImageDrawer {",
+        "line_content": "void draw(Graphics2D g) {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 52,
+        "function_declaration": "static class LineDrawer extends ImageDrawer {",
+        "line_content": "g.drawLine(10, 10, 220, 180);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 63,
+        "function_declaration": "static class RectDrawer extends ImageDrawer {",
+        "line_content": "void draw(Graphics2D g) {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit2.java",
+        "line_number": 64,
+        "function_declaration": "static class RectDrawer extends ImageDrawer {",
+        "line_content": "g.drawRect(10, 10, 220, 180);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 30,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(lineImage(), 10,10, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 31,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(rectImage(), 300, 80, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 42,
+        "function_declaration": "static abstract class ImageDrawer {",
+        "line_content": "draw(graphics);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 46,
+        "function_declaration": "static abstract class ImageDrawer {",
+        "line_content": "abstract void draw(Graphics2D g);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 52,
+        "function_declaration": "static BufferedImage lineImage() {",
+        "line_content": "void draw(Graphics2D g) {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 53,
+        "function_declaration": "static BufferedImage lineImage() {",
+        "line_content": "g.drawLine(10, 10, 220, 180);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 61,
+        "function_declaration": "static BufferedImage rectImage() {",
+        "line_content": "void draw(Graphics2D g) {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritAnonymous.java",
+        "line_number": 62,
+        "function_declaration": "static BufferedImage rectImage() {",
+        "line_content": "g.drawRect(10, 10, 220, 180);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit.java",
+        "line_number": 29,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(lineImage(), 10,10, f);",
+        "user_notes": "a"
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit.java",
+        "line_number": 30,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(rectImage(), 300, 80, f);",
+        "user_notes": "b"
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit.java",
+        "line_number": 42,
+        "function_declaration": "static BufferedImage lineImage() {",
+        "line_content": "// graphics.drawLine(10, 10, 400, 300);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit.java",
+        "line_number": 43,
+        "function_declaration": "static BufferedImage lineImage() {",
+        "line_content": "graphics.drawLine(10, 10, 220, 180);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit.java",
+        "line_number": 52,
+        "function_declaration": "static BufferedImage rectImage() {",
+        "line_content": "// graphics.drawRect(10, 10, 400, 300);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInherit.java",
+        "line_number": 53,
+        "function_declaration": "static BufferedImage rectImage() {",
+        "line_content": "graphics.drawRect(10, 10, 220, 180);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda2.java",
+        "line_number": 31,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(lineImage(), 10,10, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda2.java",
+        "line_number": 32,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(rectImage(), 300, 80, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda2.java",
+        "line_number": 39,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "static BufferedImage createImage(Consumer<Graphics2D> drawer) {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda2.java",
+        "line_number": 42,
+        "function_declaration": "static BufferedImage createImage(Consumer<Graphics2D> drawer) {",
+        "line_content": "drawer.accept(graphics);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda2.java",
+        "line_number": 47,
+        "function_declaration": "static BufferedImage lineImage() {",
+        "line_content": "return createImage(g -> g.drawLine(10, 10, 220, 180));",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritLambda2.java",
+        "line_number": 51,
+        "function_declaration": "static BufferedImage rectImage() {",
+        "line_content": "return createImage(g -> g.drawRect(10, 10, 220, 180));",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 30,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(lineImage(), 10,10, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 31,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "g.drawImage(rectImage(), 300, 80, f);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 42,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "draw(graphics);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 46,
+        "function_declaration": "public static void main(String[] args) {",
+        "line_content": "void draw(Graphics2D g);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 52,
+        "function_declaration": "static BufferedImage lineImage() {",
+        "line_content": "public void draw(Graphics2D g) {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 53,
+        "function_declaration": "public void draw(Graphics2D g) {",
+        "line_content": "g.drawLine(10, 10, 220, 180);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 61,
+        "function_declaration": "static BufferedImage rectImage() {",
+        "line_content": "public void draw(Graphics2D g) {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/Documents/examples-main/part-4/chapter-15-inheritance/src/main/java/projava/DiffSampleInheritInterface.java",
+        "line_number": 62,
+        "function_declaration": "public void draw(Graphics2D g) {",
+        "line_content": "g.drawRect(10, 10, 220, 180);",
+        "user_notes": ""
+    }
+]
