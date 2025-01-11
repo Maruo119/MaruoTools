@@ -1,5 +1,7 @@
-# MaruoTools
+# pip install
+pip install scikit-learn
 
+# setosaはどこに格納されているデータか
 setosa は Iris データセットに格納されている花の種類（ターゲットラベル）の名前で、iris.target_names に格納されています。
 
 Iris データセットの構造
