@@ -119,3 +119,6 @@ print(output.last_hidden_state)  # 文のベクトル
 * 簡単なタスク（例: 単純な分類やクラスタリング）→ TF-IDF。
 * 単語間の意味的な関係を分析（例: 類似性やアナロジー解析）→ Word2Vec。
 * 文脈を考慮した高度なタスク（例: 質問応答、要約生成）→ BERT。
+
+# その他
+https://huggingface.co/docs/huggingface_hub/package_reference/overview
