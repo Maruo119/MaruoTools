@@ -1,12 +1,21 @@
-Governor Yuriko Koike announced that Tokyo will provide a maximum subsidy for Tokyo people who choose painless delivery from October.
-"The Tokyo Metropolitan Government will lead the efforts to realize a society where children can give birth and raise children with peace of mind," said Governor Koike on Saturday.
-This is the first program in Japan to assist in painless delivery at the prefectural level.
-The Tokyo Metropolitan Government plans to record 1.1 billion yen for the initial budget for fiscal 2025, and is expected to provide 9,500 painless delivery in six months until the end of March next year.
-The target medical institution must meet certain safety standards.
+(Acts Prohibited Regarding the Conclusion of Insurance Contracts, etc.)  
+Article 300: Insurance companies, foreign insurance companies, their officers (excluding those who are insurance solicitors), insurance solicitors, insurance brokers, or their officers or employees must not engage in any of the following acts in relation to actions such as the conclusion of insurance contracts, solicitation of insurance, or inducing individuals to enroll in group insurance contracts concluded or solicited by themselves. However, acts specified in Item 1 (limited to acts against insured persons) regarding group insurance contracts, acts of not disclosing important matters specified in the next article for specified insurance contracts, and acts specified in Item 9 are excluded from this prohibition. Furthermore, acts specified in Item 1 of the contract clauses that may influence the judgment of policyholders or insured persons are not prohibited if stipulated by Cabinet Office Ordinance as cases where there is no risk of insufficient protection for policyholders, as per Article 294, Paragraph 1.  
 
-The government has decided to dispatch the Minister of Foreign Affairs Iwaya to the inauguration ceremony of the US Trump President in the United States on the 20th of this month.
-According to government officials, the next President of Trump has told him to invite the Minister of Foreign Affairs Iwaya at the inauguration ceremony on the 20th of this month.
-In response to this, the government has decided to dispatch Minister Iwaya, telling Trump.
-Up to now, it is customary for the US ambassador to the United States to attend the U.S. President's inauguration, and it is unusual for the Foreign Minister to attend.
-The government is looking for a meeting with Mr. Marco Rubio, who is appointed as the Secretary of State, in conjunction with Minister Iwaya's visit to the United States, and the progress of the approval procedure at the Senate required for ministerial affairs.While looking at it, I decided to make adjustments.
-Meanwhile, the government, on the other hand, will aim for a summit meeting between Prime Minister Ishiba and Trump as soon as possible after the next President of Trump.
+1. Acts of providing false information to policyholders or insured persons or failing to disclose important matters within the insurance contract that may influence their judgment.  
+2. Acts of encouraging policyholders or insured persons to provide false information to insurance companies or foreign insurance companies regarding important matters.  
+3. Acts of obstructing or advising policyholders or insured persons not to disclose important facts to insurance companies or foreign insurance companies.  
+4. Acts of failing to inform policyholders or insured persons of facts that may result in disadvantages and causing them to cancel existing insurance contracts and apply for new ones, or vice versa.  
+5. Acts of promising or providing policyholders or insured persons with discounts, rebates, or other special benefits.  
+6. Acts of explaining or displaying comparative matters between insurance contracts that may cause misunderstandings to policyholders, insured persons, or unspecified persons.  
+7. Acts of making definitive judgments or causing misunderstandings about uncertain matters in the future, such as policyholder dividends or surplus distributions to members, as stipulated by Cabinet Office Ordinance.  
+8. Acts of soliciting policyholders or insured persons to apply for insurance contracts while being aware that specific related parties (as defined in Article 100-3 and Article 301) of the insurance company or foreign insurance company have promised or provided special benefits.  
+9. Any other acts stipulated by Cabinet Office Ordinance as potentially harmful to the protection of policyholders.  
+
+2. The provisions of Item 5 of the preceding paragraph shall not apply when insurance companies or foreign insurance companies act based on documents listed in Article 4, Paragraph 2; Article 187, Paragraph 3; or Article 272-2, Paragraph 2.  
+
+(Application of Provisions from the Financial Instruments and Exchange Act)  
+Article 300-2: The provisions of Chapter 3, Section 1, Subsection 5 of the Financial Instruments and Exchange Act (excluding Article 34-2, Paragraphs 6 to 8, and Article 34-3, Paragraphs 5 and 6) shall apply mutatis mutandis to specific insurance contracts (as defined in Cabinet Office Ordinance under Article 300-2) and contracts for brokering specific insurance contracts on behalf of customers. Necessary technical adjustments to the interpretations of relevant articles shall be made as prescribed by Cabinet Order.  
+
+---
+
+This translation captures the legal language of the original text. If you need further refinements or specific sections explained, feel free to ask!

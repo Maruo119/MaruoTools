@@ -59,36 +59,42 @@ def translate_to_japanese(english_text):
         return f"An error occurred: {e}"
 
 # コンテキストをテキストファイルから読み込む
-with open("BERT_context_Jpn.txt", "r", encoding="utf-8") as file:
-    jpn_context = file.read()
-    context = translate_to_english(jpn_context)
+#with open("BERT_context_Jpn.txt", "r", encoding="utf-8") as file:
+with open("BERT_context_Eng.txt", "r", encoding="utf-8") as file:
+    #jpn_context = file.read()
+    #context = translate_to_english(jpn_context)
+    context = file.read()
 
 # 翻訳した内容を新しいファイルに保存
 with open("BERT_context_Eng.txt", "w", encoding="utf-8") as file:
     file.write(context)
+    
 
 # 質問を定義
-question_1_1 = "東京都は無痛分娩を選択した住民に最大いくら補助しますか？"
-question_1_2 = "無痛分娩の費用を補助するのは、日本の都道府県レベルでは初めてですか？"
-question_1_3 = "東京都がこのプログラムの初期予算に11億円を計上した年度はいつですか？"
+question_1_1 = "東京都の留学支援制度において、短期留学の場合、助成される費用の最大額はいくらですか？"
+question_1_2 = "東京都の留学支援制度の対象となる留学生は、どのような条件を満たす必要がありますか？"
+question_1_3 = "東京都がこの留学支援制度を通じて年間に支援を予定している中・長期留学者数は何人ですか？"
 
-question_2_1 = "アメリカのトランプ次期大統領の就任式は誰が出席する？"
-question_2_2 = "アメリカの大統領就任式において、これまで日本から出席するのが慣例となっていたのは誰ですか？"
-question_2_3 = "日本政府が岩屋外務大臣をアメリカに派遣するのは、誰からの招待を受けたためですか？"
-question_2_4 = "日本政府が岩屋外務大臣の訪問中に模索しているのは、次のうちどれですか？"
+question_2_1 = "第300条において、保険の勧誘や契約締結に関して禁止されている行為は何ですか？"
+question_2_2 = "第300条によると、契約の重要事項を告知しないことが許容されるのはどのような場合ですか？"
+question_2_3 = "第300条の2で定義される「特定保険契約」とは何を指しますか？"
+question_2_4 = "第300条において、保険商品間の比較に関して禁止されている行為は何ですか？"
+question_2_5 = "将来の配当や剰余金分配など、不確実な将来の利益に関する断定的判断について適用される制限は何ですか？"
 
 
 # 1回目
+'''
 print("1-1問目:", translate_to_japanese(answer_question(question_1_1, context)))
 print("1-2問目:", translate_to_japanese(answer_question(question_1_2, context)))
 print("1-3問目:", translate_to_japanese(answer_question(question_1_3, context)))
+'''
 
 # 1回目
 print("2-1問目:", translate_to_japanese(answer_question(question_2_1, context)))
 print("2-2問目:", translate_to_japanese(answer_question(question_2_2, context)))
 print("2-3問目:", translate_to_japanese(answer_question(question_2_3, context)))
 print("2-4問目:", translate_to_japanese(answer_question(question_2_4, context)))
-
+print("2-5問目:", translate_to_japanese(answer_question(question_2_5, context)))
 
 # GPUメモリ解放
 clear_gpu_memory()
