@@ -61,7 +61,7 @@ Oracleのページからダウンロードしてzipを解凍してパスを通�
 
 以下に記載したが、私は「admin」を小文字で記載しており接続がうまくいかず詰まってしまったため、今後は注意すること。
 
-```SQL
+```sql
 -- 1. EXTENSIONの作成
 CREATE EXTENSION oracle_fdw;
 
