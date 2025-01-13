@@ -11,7 +11,7 @@
 
 上記を踏まえ、業務時間に可能な限り円滑にOracle FDWの実装や検証ができるようにするため、事前に接続検証などを実行したく、以下の通り記録を残す。
 
-## 事前準備
+## 事前準備〜OracleFDWを利用した接続
 
 ### 1. OracleDB, PostgreSQL-DBを作成する。
 
@@ -90,6 +90,48 @@ CREATE FOREIGN TABLE f_STUDENTS(
 select * from f_STUDENTS
 ```
 
+## 実行計画の確認
+
+### select * from TBL
+```sql
+-- 実行したもの
+EXPLAIN ANALYZE
+SELECT * FROM f_students
+
+-- 結果
+QUERY PLAN
+Foreign Scan on f_students  (cost=10000.00..20000.00 rows=1000 width=348) (actual time=1.277..20.749 rows=1030 loops=1)
+  Oracle query: SELECT /*927f07da847c033a*/ r1."STUDENT_ID", r1."NAME", r1."GENDER", r1."CLASS" FROM "ADMIN"."STUDENTS" r1
+Planning Time: 2.287 ms
+Execution Time: 20.842 ms
+```
+
+### select * from TBL order by XXX desc
+
+```sql
+-- 実行したもの
+EXPLAIN ANALYZE
+SELECT * FROM f_students order by student_id desc
+
+-- 結果
+QUERY PLAN
+  Oracle query: SELECT /*728b4caf1285bb2a*/ r1."STUDENT_ID", r1."NAME", r1."GENDER", r1."CLASS" FROM "ADMIN"."STUDENTS" r1 ORDER BY r1."STUDENT_ID" DESC NULLS FIRST
+Planning Time: 2.517 ms
+Execution Time: 25.129 ms
+```
 
 
+### select * from TBL where XXX = A
 
+```sql
+-- 実行したもの
+EXPLAIN ANALYZE
+SELECT * FROM f_students where student_id = 3;
+
+-- 結果
+QUERY PLAN
+Foreign Scan on f_students  (cost=10000.00..20000.00 rows=1000 width=348) (actual time=1.240..1.263 rows=1 loops=1)
+  Oracle query: SELECT /*97cbcd14fb3b9e89*/ r1."STUDENT_ID", r1."NAME", r1."GENDER", r1."CLASS" FROM "ADMIN"."STUDENTS" r1 WHERE (r1."STUDENT_ID" = 3)
+Planning Time: 2.372 ms
+Execution Time: 1.308 ms
+```
