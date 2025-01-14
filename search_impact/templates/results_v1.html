@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>結果確認画面</title>
+</head>
+<body>
+    <h1>Grep 結果確認画面</h1>
+    <form action="/save" method="post">
+        <ul>
+            {% for idx, result in results.items() %}
+            <li>
+                <p>{{ result }}</p>
+                <label for="comment_{{ idx }}">コメント:</label>
+                <input type="text" id="comment_{{ idx }}" name="comment_{{ idx }}">
+            </li>
+            {% endfor %}
+        </ul>
+        <button type="submit">保存</button>
+    </form>
+    <br>
+    <form action="/" method="get">
+        <button type="submit">キー入力画面に戻る</button>
+    </form>
+</body>
+</html>
