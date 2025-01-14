@@ -31,7 +31,8 @@ def grep():
                 grep_results[idx] = {
                     "file_name": file_name,
                     "line_number": line_number,
-                    "content": content
+                    "content": content, 
+                    "myadd_idx": idx
                 }
 
         return render_template('results_v2.html', results=grep_results)

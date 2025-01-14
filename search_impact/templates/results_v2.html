@@ -30,6 +30,7 @@
                     <th>ファイル名</th>
                     <th>行番号</th>
                     <th>内容</th>
+                    <th>My_Add1</th>
                     <th>コメント</th>
                 </tr>
             </thead>
@@ -40,6 +41,7 @@
                     <td>{{ result.file_name }}</td>
                     <td>{{ result.line_number }}</td>
                     <td>{{ result.content }}</td>
+                    <td>{{ result.myadd_idx }}</td>
                     <td>
                         <input type="text" name="comment_{{ idx }}" id="comment_{{ idx }}">
                     </td>
