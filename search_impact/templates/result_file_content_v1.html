@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Content Viewer</title>
+    <style>
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .file-path {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Content Viewer</h1>
+    <div class="file-path">
+        Viewing file: <strong>{{ file_path }}</strong>
+    </div>
+    <pre>{{ content }}</pre>
+    <br>
+    <a href="/">Go Back</a>
+</body>
+</html>
