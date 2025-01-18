@@ -1,24 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grep 結果確認画面</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f4f4f4;
-            text-align: left;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
+    <!-- 外部CSSファイルのリンク -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='results_styles.css') }}">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const saveForm = document.getElementById('saveForm');
@@ -113,51 +100,54 @@
         });
 
     </script>
-
 </head>
 <body>
-    <h1>Grep 結果確認画面</h1>
-    <form id="saveForm" method="post">
-        <input type="hidden" name="keyword" value="{{ keyword }}">
-        <input type="hidden" name="repo_path" value="{{ repo_path }}">
-        <h2>検索条件</h2>
-        <p>キーワード: {{ keyword }}</p>
-        <p>リポジトリパス: {{ repo_path }}</p>
+    <div class="container">
+        <h1>Grep 結果確認画面</h1>
+        <form id="saveForm" method="post">
+            <input type="hidden" name="keyword" value="{{ keyword }}">
+            <input type="hidden" name="repo_path" value="{{ repo_path }}">
+            <h2>検索条件</h2>
+            <p><strong>キーワード:</strong> {{ keyword }}</p>
+            <p><strong>リポジトリパス:</strong> {{ repo_path }}</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>File Path</th>
-                    <th>Line Number</th>
-                    <th>Function Declaration</th>
-                    <th>Line Content</th>
-                    <th>User Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for result in results %}
-                <tr>
-                    <td>{{ loop.index }}</td>
-                    <td class="file-path">
-                        <a href="/file?path={{ result.file_path }}&keyword={{ keyword }}&repo_path={{ repo_path }}" 
-                           target="_blank" 
-                           onclick="sessionStorage.setItem('clickedRow', '{{ loop.index }}');">
-                            {{ result.file_path }}
-                        </a>
-                    </td>
-                    <td class="line-number">{{ result.line_number }}</td>
-                    <td class="function-declaration">{{ result.function_declaration }}</td>
-                    <td class="line-content">{{ result.line_content }}</td>
-                    <td class="user-notes">
-                        <input type="text" value="{{ result.user_notes }}">
-                    </td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-        <button type="submit">保存</button>
-    </form>
-    <button id="exportCSV" style="margin: 10px 0;">CSVとしてエクスポート</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>File Path</th>
+                        <th>Line Number</th>
+                        <th>Function Declaration</th>
+                        <th>Line Content</th>
+                        <th>User Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td class="file-path">
+                            <a href="/file?path={{ result.file_path }}&keyword={{ keyword }}&repo_path={{ repo_path }}" 
+                               target="_blank" 
+                               onclick="sessionStorage.setItem('clickedRow', '{{ loop.index }}');">
+                                {{ result.file_path }}
+                            </a>
+                        </td>
+                        <td class="line-number">{{ result.line_number }}</td>
+                        <td class="function-declaration">{{ result.function_declaration }}</td>
+                        <td class="line-content">{{ result.line_content }}</td>
+                        <td class="user-notes">
+                            <input type="text" value="{{ result.user_notes }}">
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div class="button-container"></div>
+            <button type="submit">保存</button>
+            <button id="exportCSV">CSVとしてエクスポート</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

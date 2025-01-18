@@ -46,7 +46,7 @@
         "line_number": 105,
         "function_declaration": "Unknown Function Declaration",
         "line_content": "reader = csv.reader(file)",
-        "user_notes": ""
+        "user_notes": "あああ"
     },
     {
         "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",

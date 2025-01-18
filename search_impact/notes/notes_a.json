@@ -1,0 +1,2907 @@
+[
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 2,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.datasets import load_iris",
+        "user_notes": "aaaa"
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 3,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.model_selection import train_test_split",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 4,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.ensemble import RandomForestClassifier",
+        "user_notes": "vv"
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 5,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.metrics import accuracy_score",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 8,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "iris = load_iris()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 9,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "X = iris.data # 特徴量（花のサイズなど）",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 10,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "y = iris.target # ラベル（花の種類）",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 16,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "model = RandomForestClassifier()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 19,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "model.fit(X_train, y_train)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 25,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "accuracy = accuracy_score(y_test, y_pred)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 26,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"モデルの精度: {accuracy * 100:.2f}%\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 29,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "#new_data = [[5.1, 3.5, .4, 0.2]] # 新しい花の特徴量（例） -> 「setosa」になる",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 30,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "new_data = [[10.1, 1.2, .2, 0.9]] # 新しい花の特徴量（例） -> 「versicolor」になる",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 31,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "prediction = model.predict(new_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 32,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "predicted_class = iris.target_names[prediction[0]]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 33,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(iris.target_names) # -> 「['setosa' 'versicolor' 'virginica']」が表示される",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/sklearn_Iris/sklearn_Iris_v1.py",
+        "line_number": 34,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"予測結果: {predicted_class}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/TF_IDF/tf_idf.py",
+        "line_number": 1,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.feature_extraction.text import TfidfVectorizer",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/TF_IDF/tf_idf.py",
+        "line_number": 8,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "X = vectorizer.fit_transform(documents)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/TF_IDF/tf_idf.py",
+        "line_number": 11,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(vectorizer.get_feature_names_out())",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/TF_IDF/tf_idf.py",
+        "line_number": 12,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(X.toarray())",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/Word2Vec/Word2Vec.py",
+        "line_number": 3,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# pip install gensim が必要",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 1,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from transformers import BertTokenizer, BertForQuestionAnswering",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 5,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 6,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 9,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def clear_gpu_memory():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 11,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if torch.cuda.is_available():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 12,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "torch.cuda.empty_cache()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 14,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def answer_question(question, context):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 20,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "start_idx = torch.argmax(outputs.start_logits)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 21,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "end_idx = torch.argmax(outputs.end_logits)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 24,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if start_idx < len(inputs.input_ids[0]) and end_idx < len(inputs.input_ids[0]):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 25,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return tokenizer.decode(inputs.input_ids[0][start_idx:end_idx+1])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 30,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(\"BERT_context.txt\", \"r\", encoding=\"utf-8\") as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 31,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "context = file.read()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 34,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "question_1_1 = \"What is the maximum subsidy amount the Tokyo metropolitan government will provide to residents choosing painless deliveries?\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 35,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "question_1_2 = \"Is this the first program at the prefecture level in Japan to subsidize the cost of painless childbirths? Please answer yes or no.\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 36,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "question_1_3 = \"For which fiscal year has the Tokyo metropolitan government allocated 1.1 billion yen in the initial budget for this program?\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 38,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "question_2_1 = \"What will Japan provide to Indonesia as part of their agreement?\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 39,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "question_2_2 = \"What type of meeting did the two leaders agree to hold between their countries' foreign and defense ministers?.\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 40,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "question_2_3 = \"What did Prime Minister Ishiba promise to cooperate on with Indonesia?\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 44,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"1-1問目:\", answer_question(question_1_1, context))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 45,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"1-2問目:\", answer_question(question_1_2, context))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 46,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"1-3問目:\", answer_question(question_1_3, context))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 48,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-1問目:\", answer_question(question_2_1, context))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 49,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-2問目:\", answer_question(question_2_2, context))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 50,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-3問目:\", answer_question(question_2_3, context))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 53,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "clear_gpu_memory()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForEng.py",
+        "line_number": 56,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "#print(\"2回目の推論:\", answer_question(question, context))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 1,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from transformers import BertTokenizer, BertForQuestionAnswering",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 3,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from googletrans import Translator",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 7,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 8,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 10,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def clear_gpu_memory():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 12,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if torch.cuda.is_available():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "torch.cuda.empty_cache()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 15,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def answer_question(question_jpn, context):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 17,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "question_eng = translate_to_english(question_jpn)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 20,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "inputs = tokenizer(question_eng, context, return_tensors=\"pt\", max_length=512, truncation=True)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 24,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "start_idx = torch.argmax(outputs.start_logits)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 25,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "end_idx = torch.argmax(outputs.end_logits)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 28,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if start_idx < len(inputs.input_ids[0]) and end_idx < len(inputs.input_ids[0]):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 29,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return tokenizer.decode(inputs.input_ids[0][start_idx:end_idx+1])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 33,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def translate_to_english(japanese_text):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 35,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "Translate Japanese text to English using googletrans library.",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 36,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": ":param japanese_text: str, Japanese text to translate",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 37,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": ":return: str, Translated English text",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 39,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "translator = Translator()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 41,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# Translate Japanese to English",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 42,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "result = translator.translate(japanese_text, src='ja', dest='en')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 44,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 47,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def translate_to_japanese(english_text):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 49,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "Translate English text to Japanese using googletrans library.",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 50,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": ":param english_text: str, English text to translate",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 51,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": ":return: str, Translated Japanese text",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 53,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "translator = Translator()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 55,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# Translate English to Japanese",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 56,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "result = translator.translate(english_text, src='en', dest='ja')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 58,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 62,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "#with open(\"BERT_context_Jpn.txt\", \"r\", encoding=\"utf-8\") as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 63,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(\"BERT_context_Eng.txt\", \"r\", encoding=\"utf-8\") as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 64,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "#jpn_context = file.read()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 65,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "#context = translate_to_english(jpn_context)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 66,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "context = file.read()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 69,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(\"BERT_context_Eng.txt\", \"w\", encoding=\"utf-8\") as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 87,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"1-1問目:\", translate_to_japanese(answer_question(question_1_1, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 88,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"1-2問目:\", translate_to_japanese(answer_question(question_1_2, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 89,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"1-3問目:\", translate_to_japanese(answer_question(question_1_3, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 93,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-1問目:\", translate_to_japanese(answer_question(question_2_1, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 94,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-2問目:\", translate_to_japanese(answer_question(question_2_2, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 95,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-3問目:\", translate_to_japanese(answer_question(question_2_3, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 96,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-4問目:\", translate_to_japanese(answer_question(question_2_4, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 97,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"2-5問目:\", translate_to_japanese(answer_question(question_2_5, context)))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT_faq_ForJpn.py",
+        "line_number": 100,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "clear_gpu_memory()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT.py",
+        "line_number": 2,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# pip install transformers torch が必要",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT.py",
+        "line_number": 4,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from transformers import BertTokenizer, BertModel",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT.py",
+        "line_number": 8,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "tokenizer = BertTokenizer.from_pretrained(\"bert-base-uncased\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT.py",
+        "line_number": 9,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "model = BertModel.from_pretrained(\"bert-base-uncased\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT.py",
+        "line_number": 12,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "text = \"I love cats and dogs.\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/BERT/BERT.py",
+        "line_number": 17,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(output.last_hidden_state) # 文のベクトル",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 1,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# pip install googletrans==4.0.0-rc1",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 2,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from googletrans import Translator",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 4,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def translate_to_english(japanese_text):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 6,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "Translate Japanese text to English using googletrans library.",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 7,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": ":param japanese_text: str, Japanese text to translate",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 8,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": ":return: str, Translated English text",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 10,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "translator = Translator()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 12,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# Translate Japanese to English",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "result = translator.translate(japanese_text, src='ja', dest='en')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 15,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 18,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if __name__ == \"__main__\":",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 19,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# Input Japanese text",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 20,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "japanese_text = input(\"日本語を入力してください: \")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 22,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# Translate to English",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 23,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "english_translation = translate_to_english(japanese_text)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/translate.py",
+        "line_number": 26,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"英語の翻訳:\", english_translation)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 1,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "#pip install PyMuPDF requests",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 5,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def download_and_extract_pdf(url, output_pdf_name):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 8,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if response.status_code == 200:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 9,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(output_pdf_name, \"wb\") as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 11,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"Downloaded PDF to {output_pdf_name}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"Failed to download PDF. Status code: {response.status_code}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 17,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "doc = fitz.open(output_pdf_name)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 18,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "extracted_text = \"\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 19,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for page_num in range(doc.page_count):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 20,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "page = doc.load_page(page_num)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 21,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "extracted_text += page.get_text() + \"\\n\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 24,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return extracted_text",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 27,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "pdf_url = \"https://www2.axa.co.jp/digitalprovision/pdf/0T0715_170.pdf\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 28,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "output_pdf_name = \"downloaded_pdf.pdf\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 31,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "text = download_and_extract_pdf(pdf_url, output_pdf_name)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 33,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(\"Extracted Text:\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/machine_learning/other_forTest/getTextFromPDF.py",
+        "line_number": 37,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(\"text_data_from_PDF.txt\", \"w\", encoding=\"utf-8\") as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 1,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from flask import Flask, render_template, request, redirect, url_for, jsonify",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 5,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from urllib.parse import quote, unquote",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 7,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "app = Flask(__name__)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 17,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def save_notes_to_file(notes, search_keyword):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 18,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "notes_file = f\"user_notes_{search_keyword}.json\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 19,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(notes_file, 'w', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 20,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "json.dump(notes, f, indent=4, ensure_ascii=False)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 24,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def load_notes(search_keyword):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 25,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "notes_file = f\"notes_{search_keyword}.json\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 26,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "file_path = os.path.join(SAVE_DIRECTORY, notes_file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 28,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if os.path.exists(file_path):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 29,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(file_path, 'r', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 30,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return json.load(f)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 34,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def find_function_declaration(file_path, line_number):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 36,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(file_path, 'r', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 37,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "lines = f.readlines()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 38,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for i in range(line_number - 2, -1, -1):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 39,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 41,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 42,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "print(f\"Error reading file {file_path}: {e}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 43,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return \"Unknown Function Declaration\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 45,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "def search_keyword_in_repository(repo_path, keyword):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 46,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "notes = {f\"{note['file_path']}:{note['line_number']}\": note[\"user_notes\"] for note in load_notes(keyword)}",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 49,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "for root, dirs, files in os.walk(repo_path):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 52,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "file_path = os.path.join(root, file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 54,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "with open(file_path, 'r', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 55,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "for line_number, line in enumerate(f, start=1):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 56,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if re.search(keyword, line):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 57,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "key = f\"{file_path}:{line_number}\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 58,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results.append({",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 59,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "\"file_path\": file_path,",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 61,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "\"function_declaration\": find_function_declaration(file_path, line_number),",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 69,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "def read_file_content_with_line_numbers(file_path):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 71,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "with open(file_path, 'r', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 72,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "lines = f.readlines()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 73,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return \"\\n\".join(f\"{i + 1}: {line}\" for i, line in enumerate(lines))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 75,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return f\"File not found: {file_path}\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 77,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return f\"Permission denied: {file_path}\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 78,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 79,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return f\"An error occurred while reading the file: {e}\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 81,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "@app.route('/')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 82,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "def input_page():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 83,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return render_template('input.html')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 85,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "@app.route('/grep', methods=['GET', 'POST'])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 91,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results_data = json.loads(results_encoded) if results_encoded else []",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 94,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "repo_path = request.form['repo_path']",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 95,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results_data = search_keyword_in_repository(repo_path, keyword)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 98,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return render_template('results_v8.html', keyword=keyword, repo_path=repo_path, results=results_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 102,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results_encoded = request.args.get(\"results\", \"\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 103,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results_data = json.loads(results_encoded) if results_encoded else []",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 105,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return render_template('results_v8.html', results=results_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 107,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "@app.route(\"/file\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 109,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "file_path = request.args.get(\"path\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 110,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if not file_path:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 111,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return \"File path not provided.\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 113,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "keyword = request.args.get(\"keyword\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 114,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "repo_path = request.args.get(\"repo_path\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 116,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "content = read_file_content_with_line_numbers(file_path)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 118,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return render_template(\"result_file_content_v8.html\", file_path=file_path, content=content, keyword=keyword, repo_path=repo_path)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 120,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "@app.route('/save', methods=['POST'])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 121,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "def save_notes():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 125,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "repo_path = request.form.get('repo_path')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 126,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results = json.loads(request.form.get('results')) # JSON文字列を辞書形式に変換",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 128,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if not keyword or not repo_path or not results:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 129,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return jsonify({\"error\": \"Missing required data\"}), 400",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 132,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "file_name = f\"notes_{keyword}.json\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 133,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "file_path = os.path.join(SAVE_DIRECTORY, file_name)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 136,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "os.makedirs(SAVE_DIRECTORY, exist_ok=True)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 139,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "with open(file_path, 'w', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 140,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "json.dump(results, f, ensure_ascii=False, indent=4)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 142,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return jsonify({\"message\": \"Notes saved successfully\", \"file_path\": file_path}), 200",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 144,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 147,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if __name__ == '__main__':",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/app_v8.py",
+        "line_number": 148,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "app.run(debug=True)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 4,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from flask import Flask, render_template_string, request, jsonify",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 6,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def load_notes(search_keyword):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 7,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "notes_file = f\"user_notes_{search_keyword}.json\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 8,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if os.path.exists(notes_file):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 9,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(notes_file, 'r', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 10,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return json.load(f)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def save_notes_to_file(notes, search_keyword):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 14,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "notes_file = f\"user_notes_{search_keyword}.json\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 15,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(notes_file, 'w', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 16,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "json.dump(notes, f, indent=4, ensure_ascii=False)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 18,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def find_function_declaration(file_path, line_number):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 20,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(file_path, 'r', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 21,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "lines = f.readlines()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 22,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for i in range(line_number - 2, -1, -1):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 23,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 25,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 26,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "print(f\"Error reading file {file_path}: {e}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 27,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return \"Unknown Function Declaration\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 29,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "def search_keyword_in_repository(repo_path, keyword):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 30,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "notes = {f\"{note['file_path']}:{note['line_number']}\": note[\"user_notes\"] for note in load_notes(keyword)}",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 33,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "for root, dirs, files in os.walk(repo_path):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 35,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if file.endswith(\".java\"):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 36,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "file_path = os.path.join(root, file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 38,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "with open(file_path, 'r', encoding='utf-8') as f:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 39,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "for line_number, line in enumerate(f, start=1):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 40,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if re.search(keyword, line):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 41,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "key = f\"{file_path}:{line_number}\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 42,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results.append({",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 43,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "\"file_path\": file_path,",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 45,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "\"function_declaration\": find_function_declaration(file_path, line_number),",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 53,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "app = Flask(__name__)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 55,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results_data = []",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 56,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "search_keyword = \"\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 58,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "@app.route(\"/report\", methods=[\"GET\", \"POST\"])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 60,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "global results_data, search_keyword",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 62,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "updates = request.json",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 63,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "for update in updates:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 64,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "for result in results_data:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 65,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if (result[\"file_path\"] == update[\"file_path\"] and",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 66,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "result[\"line_number\"] == update[\"line_number\"]):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 67,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "result[\"user_notes\"] = update[\"user_notes\"]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 68,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "save_notes_to_file(results_data, search_keyword)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 69,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return jsonify({\"status\": \"success\"})",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 71,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "#repository_path = input(\"Enter the path to the repository: \").strip()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 72,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "search_keyword = input(\"Enter the keyword to search for: \").strip()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 74,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "repository_path = \"/Users/yuta/Documents/examples-main\".strip()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 75,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "#search_keyword = \"map\".strip()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 78,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "results_data = search_keyword_in_repository(repository_path, search_keyword)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 80,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "html_template = \"\"\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 82,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ang=\"en\">",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 83,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ad>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 84,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "a charset=\"UTF-8\">",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 85,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "a name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 86,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 89,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "margin: 0;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 90,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "font-family: Arial, sans-serif;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 92,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "table {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 94,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "border-collapse: collapse;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 98,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "padding: 8px;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 101,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "background-color: #f4f4f4;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 102,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "text-align: left;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 107,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "a {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 109,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "text-decoration: underline;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 111,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": ".header {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 112,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "display: flex;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 113,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "justify-content: space-between;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 114,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "align-items: center;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 118,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "background-color: #fff;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 120,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "padding: 10px;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 124,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "margin-top: 60px;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 128,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "async function saveNotes() {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 130,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "document.querySelectorAll('tr[data-file-path]').forEach(row => {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 131,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "const filePath = row.getAttribute('data-file-path');",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 132,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "const lineNumber = row.getAttribute('data-line-number');",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 133,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "const userNotes = row.querySelector('textarea').value;",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 134,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "notes.push({ file_path: filePath, line_number: parseInt(lineNumber), user_notes: userNotes });",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 137,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "const response = await fetch(\"/report\", {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 139,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "headers: {",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 140,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "\"Content-Type\": \"application/json\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 145,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "const result = await response.json();",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 146,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "alert(result.status);",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 149,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ad>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 151,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ass=\"header\">\n",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 152,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "Search Results\n\n",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 153,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "aveNotes()\">Save Notes",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 155,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ass=\"content\">\n",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 156,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "able>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 157,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ad>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 160,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "File Path",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 162,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "Function Declaration",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 166,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ad>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 169,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "ata-file-path=\"{{ result.file_path }}\" data-line-number=\"{{ result.line_number }}\">",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 171,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "<a href=\"/file?path={{ result.file_path }}\" target=\"_blank\">{{ result.file_path }}a>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 173,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "{{ result.function_declaration }}",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 175,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "area>{{ result.user_notes }}area>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 179,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "able>",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 184,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return render_template_string(html_template, results=results_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 186,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "@app.route(\"/file\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 188,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "file_path = request.args.get(\"path\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 189,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if not file_path:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 190,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "return \"File path not provided.\"",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 191,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "content = read_file_content_with_line_numbers(file_path)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 194,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "if __name__ == \"__main__\":",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/search_impact_v7.py",
+        "line_number": 195,
+        "function_declaration": "if re.search(r'\\b(public|private|protected|static|abstract)\\b.*\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\b', lines[i]):",
+        "line_content": "app.run(debug=True)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 5,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from datetime import datetime",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 6,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from collections import defaultdict",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 9,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def run_git_command(command, repo_path):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 11,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "result = subprocess.run(command, cwd=repo_path, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"Error executing command: {' '.join(command)}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 18,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def get_commit_history(repo_path, since=None, until=None):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 20,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "command = [\"git\", \"log\", \"--pretty=format:%H,%an,%ae,%cd,%cn,%ce,%s\", \"--date=iso8601\"]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 22,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "command.append(f\"--since={since}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 24,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "command.append(f\"--until={until}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 25,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return run_git_command(command, repo_path).split(\"\\n\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 27,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def get_changed_files(repo_path, commit_hash):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 29,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "command = [\"git\", \"show\", \"--name-only\", \"--pretty=format:\", commit_hash]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 30,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return run_git_command(command, repo_path).split(\"\\n\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 32,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def parse_commit_data(commit_data, repo_path):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 34,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "tz = pytz.timezone('Asia/Tokyo')",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 35,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "parsed_data = []",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 36,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for line in commit_data:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 37,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "commit_hash, author_name, author_email, commit_date, committer_name, committer_email, commit_message = line.split(\",\", 6)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 39,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "changed_files = get_changed_files(repo_path, commit_hash)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 40,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for file in changed_files:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 41,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "parsed_data.append([commit_hash, author_name, author_email, commit_date, commit_message, committer_name, committer_email, file])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 43,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return parsed_data",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 46,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def write_to_csv(parsed_data, output_file):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 48,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(output_file, mode='w', newline='') as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 50,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "writer.writerow([\"Commit Hash\", \"Author Name\", \"Author Email\", \"Commit Date\", \"Commit Message\", \"Committer Name\", \"Committer Email\", \"File Changed\"])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 51,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "writer.writerows(parsed_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 53,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def read_commit_history(input_file):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 55,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "commit_data = defaultdict(list)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 56,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(input_file, mode='r') as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 57,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "reader = csv.reader(file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 58,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "next(reader) # ヘッダーをスキップ",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 59,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for row in reader:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 60,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "commit_hash = row[0]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 61,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "file_changed = row[7]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 62,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "commit_date = row[3]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 63,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "commit_data[file_changed].append({\"commit_hash\": commit_hash, \"commit_date\": commit_date})",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 64,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return commit_data",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 66,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def get_file_commit_info(commit_data):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 68,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "result_data = []",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 69,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for file_path, commits in commit_data.items():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 70,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "sorted_commits = sorted(commits, key=lambda x: x[\"commit_date\"])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 73,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "result_data.append([file_path, oldest_commit[\"commit_date\"], oldest_commit[\"commit_hash\"], newest_commit[\"commit_date\"], newest_commit[\"commit_hash\"], len(sorted_commits)])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 74,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "return result_data",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 76,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def write_to_output_csv(output_file, result_data):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 78,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(output_file, mode='w', newline='') as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 80,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "writer.writerow([\"Changed Files (Full Path)\", \"Oldest Update Date\", \"Oldest Commit Hash\", \"Newest Update Date\", \"Newest Commit Hash\", \"Commit Count\"])",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 81,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "writer.writerows(result_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 83,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def create_folder(folder_name):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 85,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "os.makedirs(folder_name, exist_ok=True)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 87,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def checkout_commit(repo_path, commit_hash, file_path, output_folder):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 89,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "command = [\"git\", \"checkout\", commit_hash, \"--\", file_path]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 90,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if run_git_command(command, repo_path) is None:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 92,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "destination = os.path.join(output_folder, file_path)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 93,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "os.makedirs(os.path.dirname(destination), exist_ok=True)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 95,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "shutil.copy(os.path.join(repo_path, file_path), destination)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 96,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "#print(f\"File {file_path} from commit {commit_hash} has been copied to {output_folder}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 98,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"Warning: File {file_path} not found in the commit {commit_hash}. Skipping...\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 99,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "except Exception as e:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 100,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"Error: Failed to copy file {file_path} to {destination}. {e}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 102,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def process_file_update_summary(input_file, repo_path):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 104,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "with open(input_file, mode='r') as file:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 105,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "reader = csv.reader(file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 106,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "next(reader) # ヘッダーをスキップ",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 107,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "for row in reader:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 108,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "file_path = row[0]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 109,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "oldest_commit_hash = row[2]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 110,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "newest_commit_hash = row[4]",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 111,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "checkout_commit(repo_path, oldest_commit_hash, file_path, \"Old\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 112,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "checkout_commit(repo_path, newest_commit_hash, file_path, \"New\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 114,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def main():",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 115,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "repo_path = \"/Users/yuta/Documents/myGithub/freeCodeCamp\" # リポジトリのローカルパス",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 121,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "commit_data = get_commit_history(repo_path, since, until)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 122,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if not commit_data:",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 125,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "parsed_data = parse_commit_data(commit_data, repo_path)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 126,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "write_to_csv(parsed_data, output_file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 127,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"Commit history has been saved to {output_file}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 132,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "output_file = \"file_update_summary.csv\" # 出力CSVファイル名",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 134,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "commit_data = read_commit_history(input_file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 135,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "result_data = get_file_commit_info(commit_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 136,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "write_to_output_csv(output_file, result_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 137,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(f\"File update summary has been saved to {output_file}\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 141,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "create_folder(\"Old\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 142,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "create_folder(\"New\")",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 144,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "process_file_update_summary(\"file_update_summary.csv\", repo_path)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 147,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "if __name__ == \"__main__\":",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 148,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "main()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 2,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "import pandas as pd",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 3,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.feature_extraction.text import CountVectorizer",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 4,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.model_selection import train_test_split",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 5,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.ensemble import RandomForestClassifier",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 6,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "from sklearn.metrics import classification_report",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "data = pd.read_csv(\"inquiries.csv\") # ファイル名を適宜変更",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 16,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "X = data['問い合わせ概要'] # 入力データ",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 17,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "y = data['対応方法'] # 出力データ（ラベル）",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 19,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "# テキストを数値に変換（Bag of Wordsを使用）",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 21,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "X_vectorized = vectorizer.fit_transform(X)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 24,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "X_train, X_test, y_train, y_test = train_test_split(X_vectorized, y, test_size=0.2, random_state=42)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 27,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "model = RandomForestClassifier()",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 28,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "model.fit(X_train, y_train)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 33,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(classification_report(y_test, y_pred))",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 35,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "print(data['対応方法'].value_counts())",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 43,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "break",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 45,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "new_inquiry_vectorized = vectorizer.transform([new_inquiry])",
+        "user_notes": ""
+    }
+]

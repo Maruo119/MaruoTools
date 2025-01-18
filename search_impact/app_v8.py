@@ -12,15 +12,6 @@ SAVE_DIRECTORY = "notes"
 # Grep結果を一時的に保存する辞書
 grep_results = {}
 
-
-'''
-def save_notes_to_file(notes, search_keyword):
-    notes_file = f"user_notes_{search_keyword}.json"
-    with open(notes_file, 'w', encoding='utf-8') as f:
-        json.dump(notes, f, indent=4, ensure_ascii=False)
-'''
-
-
 def load_notes(search_keyword):
     notes_file = f"notes_{search_keyword}.json"
     file_path = os.path.join(SAVE_DIRECTORY, notes_file)
