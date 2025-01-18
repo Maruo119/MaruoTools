@@ -70,16 +70,47 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
-        const keyword = "{{ keyword }}"; // ここに検索キーワードを挿入
-        if (keyword) {
-            document.querySelectorAll('.line-content').forEach(cell => {
-                const content = cell.innerText;
-                const regex = new RegExp(`(${keyword})`, 'gi');
-                const highlighted = content.replace(regex, '<span style="color: red;">$1</span>');
-                cell.innerHTML = highlighted; // 置き換え後の内容を挿入
+            const keyword = "{{ keyword }}"; // ここに検索キーワードを挿入
+            if (keyword) {
+                document.querySelectorAll('.line-content').forEach(cell => {
+                    const content = cell.innerText;
+                    const regex = new RegExp(`(${keyword})`, 'gi');
+                    const highlighted = content.replace(regex, '<span style="color: red;">$1</span>');
+                    cell.innerHTML = highlighted; // 置き換え後の内容を挿入
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const keyword = "{{ keyword }}"; // ここに検索キーワードを挿入
+
+            document.getElementById('exportCSV').addEventListener('click', function () {
+                const rows = [['#', 'File Path', 'Line Number', 'Function Declaration', 'Line Content', 'User Notes']];
+                
+                // テーブルデータを収集
+                document.querySelectorAll('table tbody tr').forEach(row => {
+                    const rowData = [
+                        row.querySelector('td:nth-child(1)').innerText, // #
+                        row.querySelector('.file-path').innerText, // File Path
+                        row.querySelector('.line-number').innerText, // Line Number
+                        row.querySelector('.function-declaration').innerText, // Function Declaration
+                        row.querySelector('.line-content').innerText, // Line Content
+                        row.querySelector('.user-notes input').value // User Notes
+                    ];
+                    rows.push(rowData);
+                });
+
+                // CSVコンテンツ生成
+                const csvContent = rows.map(r => r.map(value => `"${value}"`).join(',')).join('\n');
+
+                // CSVファイルを作成してダウンロード
+                const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'GrepExport_' + keyword + '.csv';
+                link.click();
             });
-        }
-    });
+        });
 
     </script>
 
@@ -127,5 +158,6 @@
         </table>
         <button type="submit">保存</button>
     </form>
+    <button id="exportCSV" style="margin: 10px 0;">CSVとしてエクスポート</button>
 </body>
 </html>
