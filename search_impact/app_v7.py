@@ -99,11 +99,12 @@ def file_content():
     if not file_path:
         return "File path not provided."
 
-    content = read_file_content_with_line_numbers(file_path)
-    results_encoded = request.args.get("results", "")
-    results = json.loads(unquote(results_encoded)) if results_encoded else []
+    keyword = request.args.get("keyword")
+    repo_path = request.args.get("repo_path")
 
-    return render_template("result_file_content_v7.html", file_path=file_path, content=content, results=results)
+    content = read_file_content_with_line_numbers(file_path)
+    
+    return render_template("result_file_content_v7.html", file_path=file_path, content=content, keyword=keyword, repo_path=repo_path)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -29,11 +29,14 @@
 <body>
     <h1>File Content Viewer</h1>
     <div class="file-path">
-        Viewing file: <strong>{{ file_path }}</strong>
+        <h2>検索条件</h2>
+        <p>キーワード: {{ keyword }}</p>
+        <p>リポジトリパス: {{ repo_path }}</p>
+        <p>Viewing file: <strong>{{ file_path }}</strong></p>
     </div>
     <pre>{{ content }}</pre>
     <br>
-    <a href="/grep?results={{ results | tojson | urlencode }}">Go Back</a>
+    <p>戻るボタンはここ</p>
 
 </body>
 </html>
