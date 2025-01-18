@@ -19,6 +19,21 @@
             background-color: #f9f9f9;
         }
     </style>
+    <script>
+        // ページ読み込み後にスクロール位置を復元
+        window.addEventListener('load', function() {
+            const savedPosition = sessionStorage.getItem('scrollPosition');
+            if (savedPosition) {
+                window.scrollTo(0, parseInt(savedPosition, 10));
+                sessionStorage.removeItem('scrollPosition'); // 一度使ったら削除
+            }
+        });
+
+        // ページ遷移前にスクロール位置を保存
+        window.addEventListener('beforeunload', function() {
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+        });
+    </script>
 </head>
 <body>
     <h1>Grep 結果確認画面</h1>
@@ -40,9 +55,15 @@
             </thead>
             <tbody>
                 {% for result in results %}
-                <tr>
+                <tr id="row_{{ loop.index }}">
                     <td>{{ loop.index }}</td>
-                    <td><a href="/file?path={{ result.file_path }}&keyword={{ keyword }}&repo_path={{ repo_path }}" target="_blank">{{ result.file_path }}</a></td>
+                    <td>
+                        <a href="/file?path={{ result.file_path }}&keyword={{ keyword }}&repo_path={{ repo_path }}" 
+                           target="_blank" 
+                           onclick="sessionStorage.setItem('clickedRow', '{{ loop.index }}');">
+                            {{ result.file_path }}
+                        </a>
+                    </td>
                     <td>{{ result.line_number }}</td>
                     <td>{{ result.function_declaration }}</td>
                     <td>{{ result.line_content }}</td>
@@ -59,5 +80,18 @@
     <form action="/" method="get">
         <button type="submit">キー入力画面に戻る</button>
     </form>
+    <script>
+        // ページ読み込み時にクリックされた行にスクロール
+        window.addEventListener('load', function() {
+            const clickedRow = sessionStorage.getItem('clickedRow');
+            if (clickedRow) {
+                const targetRow = document.getElementById(`row_${clickedRow}`);
+                if (targetRow) {
+                    targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                sessionStorage.removeItem('clickedRow'); // 一度使ったら削除
+            }
+        });
+    </script>
 </body>
 </html>
