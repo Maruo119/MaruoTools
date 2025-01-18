@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify
 import os
 import re
 import json
-import subprocess
+from urllib.parse import quote, unquote
 
 app = Flask(__name__)
 
@@ -56,15 +56,10 @@ def search_keyword_in_repository(repo_path, keyword):
                     continue
     return results
 
-
 def read_file_content_with_line_numbers(file_path):
-    """
-    指定されたファイルを読み込み、行番号を付けて返す関数。
-    """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
-            # 行番号付きの形式に変換
             return "\n".join(f"{i + 1}: {line}" for i, line in enumerate(lines))
     except FileNotFoundError:
         return f"File not found: {file_path}"
@@ -73,34 +68,30 @@ def read_file_content_with_line_numbers(file_path):
     except Exception as e:
         return f"An error occurred while reading the file: {e}"
 
-
 @app.route('/')
 def input_page():
-    """キー入力画面"""
     return render_template('input.html')
 
-@app.route('/grep', methods=['POST'])
+@app.route('/grep', methods=['GET', 'POST'])
 def grep():
-    keyword = request.form['keyword']
-    repo_path = request.form['repo_path']
+    if request.method == 'POST':
+        # POSTリクエストから results を取得
+        if 'results' in request.form:
+            results_encoded = request.form['results']
+            results_data = json.loads(results_encoded) if results_encoded else []
+        else:
+            keyword = request.form['keyword']
+            repo_path = request.form['repo_path']
+            results_data = search_keyword_in_repository(repo_path, keyword)
 
-    results_data = search_keyword_in_repository(repo_path, keyword)
+            return render_template('results_v7.html', results=results_data, keyword=keyword, repo_path=repo_path)
+    else:
+        # GETリクエストで results を処理
+        results_encoded = request.args.get("results", "")
+        results_data = json.loads(results_encoded) if results_encoded else []
 
-    print("Results Data:", results_data)
+    return render_template('results_v7.html', results=results_data)
 
-    return render_template('results_v4.html', results=results_data)
-
-@app.route('/save', methods=['POST'])
-def save_results():
-    """影響調査コメントをJSONファイルに保存"""
-    comments = request.form.to_dict()
-    comments.pop('csrf_token', None)  # CSRFトークンが含まれている場合は削除
-
-    # JSONファイルに保存
-    with open('comments.json', 'w', encoding='utf-8') as f:
-        json.dump(comments, f, ensure_ascii=False, indent=4)
-
-    return redirect(url_for('input_page'))
 
 @app.route("/file")
 def file_content():
@@ -109,8 +100,10 @@ def file_content():
         return "File path not provided."
 
     content = read_file_content_with_line_numbers(file_path)
-    return render_template("result_file_content_v1.html", file_path=file_path, content=content)
+    results_encoded = request.args.get("results", "")
+    results = json.loads(unquote(results_encoded)) if results_encoded else []
 
+    return render_template("result_file_content_v7.html", file_path=file_path, content=content, results=results)
 
 if __name__ == '__main__':
     app.run(debug=True)
