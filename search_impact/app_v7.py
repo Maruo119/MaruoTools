@@ -92,7 +92,6 @@ def grep():
 
     return render_template('results_v7.html', results=results_data)
 
-
 @app.route("/file")
 def file_content():
     file_path = request.args.get("path")
