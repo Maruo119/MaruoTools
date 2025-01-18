@@ -1,0 +1,100 @@
+[
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 2,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "import csv",
+        "user_notes": "12345"
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 46,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def write_to_csv(parsed_data, output_file):",
+        "user_notes": "bb"
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 49,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "writer = csv.writer(file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 57,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "reader = csv.reader(file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 76,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "def write_to_output_csv(output_file, result_data):",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 79,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "writer = csv.writer(file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 105,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "reader = csv.reader(file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 116,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "output_file = \"commit_history.csv\" # 出力するCSVファイル名",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 126,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "write_to_csv(parsed_data, output_file)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 131,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "input_file = \"commit_history.csv\" # 入力CSVファイル名",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 132,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "output_file = \"file_update_summary.csv\" # 出力CSVファイル名",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 136,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "write_to_output_csv(output_file, result_data)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+        "line_number": 144,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "process_file_update_summary(\"file_update_summary.csv\", repo_path)",
+        "user_notes": ""
+    },
+    {
+        "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+        "line_number": 13,
+        "function_declaration": "Unknown Function Declaration",
+        "line_content": "data = pd.read_csv(\"inquiries.csv\") # ファイル名を適宜変更",
+        "user_notes": ""
+    }
+]

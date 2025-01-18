@@ -6,6 +6,9 @@ from urllib.parse import quote, unquote
 
 app = Flask(__name__)
 
+# 保存先ディレクトリ（適宜設定してください）
+SAVE_DIRECTORY = "notes"
+
 # Grep結果を一時的に保存する辞書
 grep_results = {}
 
@@ -104,6 +107,33 @@ def file_content():
     content = read_file_content_with_line_numbers(file_path)
     
     return render_template("result_file_content_v8.html", file_path=file_path, content=content, keyword=keyword, repo_path=repo_path)
+
+@app.route('/save', methods=['POST'])
+def save_notes():
+    try:
+        # フォームデータの取得
+        keyword = request.form.get('keyword')
+        repo_path = request.form.get('repo_path')
+        results = json.loads(request.form.get('results'))  # JSON文字列を辞書形式に変換
+
+        if not keyword or not repo_path or not results:
+            return jsonify({"error": "Missing required data"}), 400
+
+        # ファイル名を生成
+        file_name = f"notes_{keyword}.json"
+        file_path = os.path.join(SAVE_DIRECTORY, file_name)
+
+        # 保存先ディレクトリが存在しない場合は作成
+        os.makedirs(SAVE_DIRECTORY, exist_ok=True)
+
+        # JSONファイルに書き込み（上書きまたは新規作成）
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(results, f, ensure_ascii=False, indent=4)
+
+        return jsonify({"message": "Notes saved successfully", "file_path": file_path}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

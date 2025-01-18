@@ -19,14 +19,62 @@
             background-color: #f9f9f9;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const saveForm = document.getElementById('saveForm');
+
+            saveForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // デフォルトのフォーム送信を防止
+
+                // User Notesを含むテーブルデータを収集
+                const results = [];
+                document.querySelectorAll('table tbody tr').forEach(row => {
+                    const filePath = row.querySelector('.file-path').innerText;
+                    const lineNumber = parseInt(row.querySelector('.line-number').innerText, 10);
+                    const functionDeclaration = row.querySelector('.function-declaration').innerText;
+                    const lineContent = row.querySelector('.line-content').innerText;
+                    const userNotes = row.querySelector('.user-notes input').value;
+
+                    results.push({
+                        file_path: filePath,
+                        line_number: lineNumber,
+                        function_declaration: functionDeclaration,
+                        line_content: lineContent,
+                        user_notes: userNotes
+                    });
+                });
+
+                // デバッグ用ログ: 結果をコンソールに出力
+                console.log('Collected results:', results);
+
+                // サーバーにデータを送信
+                const formData = new FormData();
+                formData.append('keyword', saveForm.querySelector('input[name="keyword"]').value);
+                formData.append('repo_path', saveForm.querySelector('input[name="repo_path"]').value);
+                formData.append('results', JSON.stringify(results)); // JSON形式で送信
+
+                fetch('/save', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Server response:', data); // サーバーからの応答を確認
+                    alert(data.message || '保存が成功しました');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('エラーが発生しました');
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <h1>Grep 結果確認画面</h1>
-    <form action="/save" method="post">
-        <h2>検索条件</h2>
-        <p>キーワード: {{ keyword }}</p>
-        <p>リポジトリパス: {{ repo_path }}</p>
-
+    <form id="saveForm" method="post">
+        <input type="hidden" name="keyword" value="{{ keyword }}">
+        <input type="hidden" name="repo_path" value="{{ repo_path }}">
         <table>
             <thead>
                 <tr>
@@ -40,30 +88,26 @@
             </thead>
             <tbody>
                 {% for result in results %}
-                <tr id="row_{{ loop.index }}">
+                <tr>
                     <td>{{ loop.index }}</td>
-                    <td>
+                    <td class="file-path">
                         <a href="/file?path={{ result.file_path }}&keyword={{ keyword }}&repo_path={{ repo_path }}" 
                            target="_blank" 
                            onclick="sessionStorage.setItem('clickedRow', '{{ loop.index }}');">
                             {{ result.file_path }}
                         </a>
                     </td>
-                    <td>{{ result.line_number }}</td>
-                    <td>{{ result.function_declaration }}</td>
-                    <td>{{ result.line_content }}</td>
-                    <td>
-                        <input type="text" name="comment_{{ loop.index0 }}" id="comment_{{ loop.index0 }}" value="{{ result.user_notes }}">
+                    <td class="line-number">{{ result.line_number }}</td>
+                    <td class="function-declaration">{{ result.function_declaration }}</td>
+                    <td class="line-content">{{ result.line_content }}</td>
+                    <td class="user-notes">
+                        <input type="text" value="{{ result.user_notes }}">
                     </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
         <button type="submit">保存</button>
-    </form>
-    <br>
-    <form action="/" method="get">
-        <button type="submit">キー入力画面に戻る</button>
     </form>
 </body>
 </html>
