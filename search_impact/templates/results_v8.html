@@ -68,13 +68,31 @@
                 });
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+        const keyword = "{{ keyword }}"; // ここに検索キーワードを挿入
+        if (keyword) {
+            document.querySelectorAll('.line-content').forEach(cell => {
+                const content = cell.innerText;
+                const regex = new RegExp(`(${keyword})`, 'gi');
+                const highlighted = content.replace(regex, '<span style="color: red;">$1</span>');
+                cell.innerHTML = highlighted; // 置き換え後の内容を挿入
+            });
+        }
+    });
+
     </script>
+
 </head>
 <body>
     <h1>Grep 結果確認画面</h1>
     <form id="saveForm" method="post">
         <input type="hidden" name="keyword" value="{{ keyword }}">
         <input type="hidden" name="repo_path" value="{{ repo_path }}">
+        <h2>検索条件</h2>
+        <p>キーワード: {{ keyword }}</p>
+        <p>リポジトリパス: {{ repo_path }}</p>
+
         <table>
             <thead>
                 <tr>

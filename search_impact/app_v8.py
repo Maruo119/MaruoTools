@@ -12,17 +12,24 @@ SAVE_DIRECTORY = "notes"
 # Grep結果を一時的に保存する辞書
 grep_results = {}
 
-def load_notes(search_keyword):
-    notes_file = f"user_notes_{search_keyword}.json"
-    if os.path.exists(notes_file):
-        with open(notes_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return []
 
+'''
 def save_notes_to_file(notes, search_keyword):
     notes_file = f"user_notes_{search_keyword}.json"
     with open(notes_file, 'w', encoding='utf-8') as f:
         json.dump(notes, f, indent=4, ensure_ascii=False)
+'''
+
+
+def load_notes(search_keyword):
+    notes_file = f"notes_{search_keyword}.json"
+    file_path = os.path.join(SAVE_DIRECTORY, notes_file)
+
+    if os.path.exists(file_path):
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return []
+
 
 def find_function_declaration(file_path, line_number):
     try:
@@ -87,7 +94,9 @@ def grep():
             repo_path = request.form['repo_path']
             results_data = search_keyword_in_repository(repo_path, keyword)
 
-            return render_template('results_v8.html', results=results_data, keyword=keyword, repo_path=repo_path)
+            # テンプレートに渡す
+            return render_template('results_v8.html', keyword=keyword, repo_path=repo_path, results=results_data)
+
     else:
         # GETリクエストで results を処理
         results_encoded = request.args.get("results", "")

@@ -4,21 +4,21 @@
         "line_number": 2,
         "function_declaration": "Unknown Function Declaration",
         "line_content": "import csv",
-        "user_notes": "12345"
+        "user_notes": "12345a"
     },
     {
         "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
         "line_number": 46,
         "function_declaration": "Unknown Function Declaration",
         "line_content": "def write_to_csv(parsed_data, output_file):",
-        "user_notes": "bb"
+        "user_notes": "bb123"
     },
     {
         "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
         "line_number": 49,
         "function_declaration": "Unknown Function Declaration",
         "line_content": "writer = csv.writer(file)",
-        "user_notes": ""
+        "user_notes": "ccc"
     },
     {
         "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
@@ -95,6 +95,6 @@
         "line_number": 13,
         "function_declaration": "Unknown Function Declaration",
         "line_content": "data = pd.read_csv(\"inquiries.csv\") # ファイル名を適宜変更",
-        "user_notes": ""
+        "user_notes": "0987"
     }
 ]
