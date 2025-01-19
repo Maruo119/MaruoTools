@@ -32,7 +32,7 @@ def find_function_declaration(file_path, line_number):
         print(f"Error reading file {file_path}: {e}")
     return "Unknown Function Declaration"
 
-def search_keyword_in_repository(repo_path, keyword):
+def search_keyword_in_repository(repo_path, keyword, file_type_include, file_type_exclude):
     notes = {f"{note['file_path']}:{note['line_number']}": note["user_notes"] for note in load_notes(keyword)}
     results = []
 
@@ -70,7 +70,7 @@ def read_file_content_with_line_numbers(file_path):
 
 @app.route('/')
 def input_page():
-    return render_template('input.html')
+    return render_template('input_v9.html')
 
 @app.route('/grep', methods=['GET', 'POST'])
 def grep():
@@ -82,17 +82,20 @@ def grep():
         else:
             keyword = request.form['keyword']
             repo_path = request.form['repo_path']
-            results_data = search_keyword_in_repository(repo_path, keyword)
+            file_type_include = request.form['file_type_include']
+            file_type_exclude = request.form['file_type_exclude']
+
+            results_data = search_keyword_in_repository(repo_path, keyword, file_type_include, file_type_exclude)
 
             # テンプレートに渡す
-            return render_template('results_v8.html', keyword=keyword, repo_path=repo_path, results=results_data)
+            return render_template('results_v9.html', keyword=keyword, repo_path=repo_path, results=results_data, file_type_include=file_type_include, file_type_exclude=file_type_exclude)
 
     else:
         # GETリクエストで results を処理
         results_encoded = request.args.get("results", "")
         results_data = json.loads(results_encoded) if results_encoded else []
 
-    return render_template('results_v8.html', results=results_data)
+    return render_template('results_v9.html', results=results_data)
 
 @app.route("/file")
 def file_content():
@@ -102,10 +105,12 @@ def file_content():
 
     keyword = request.args.get("keyword")
     repo_path = request.args.get("repo_path")
+    file_type_include = request.args.get("file_type_include")
+    file_type_exclude = request.args.get("file_type_exclude")
 
     content = read_file_content_with_line_numbers(file_path)
     
-    return render_template("result_file_content_v8.html", file_path=file_path, content=content, keyword=keyword, repo_path=repo_path)
+    return render_template("result_file_content_v9.html", file_path=file_path, content=content, keyword=keyword, repo_path=repo_path, file_type_include=file_type_include, file_type_exclude=file_type_exclude)
 
 @app.route('/save', methods=['POST'])
 def save_notes():

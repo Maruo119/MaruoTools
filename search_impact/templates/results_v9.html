@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grep 結果確認画面</title>
+    <!-- 外部CSSファイルのリンク -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='results_styles.css') }}">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const saveForm = document.getElementById('saveForm');
+
+            saveForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // デフォルトのフォーム送信を防止
+
+                // User Notesを含むテーブルデータを収集
+                const results = [];
+                document.querySelectorAll('table tbody tr').forEach(row => {
+                    const filePath = row.querySelector('.file-path').innerText;
+                    const lineNumber = parseInt(row.querySelector('.line-number').innerText, 10);
+                    const functionDeclaration = row.querySelector('.function-declaration').innerText;
+                    const lineContent = row.querySelector('.line-content').innerText;
+                    const userNotes = row.querySelector('.user-notes input').value;
+
+                    results.push({
+                        file_path: filePath,
+                        line_number: lineNumber,
+                        function_declaration: functionDeclaration,
+                        line_content: lineContent,
+                        user_notes: userNotes
+                    });
+                });
+
+                // デバッグ用ログ: 結果をコンソールに出力
+                console.log('Collected results:', results);
+
+                // サーバーにデータを送信
+                const formData = new FormData();
+                formData.append('keyword', saveForm.querySelector('input[name="keyword"]').value);
+                formData.append('repo_path', saveForm.querySelector('input[name="repo_path"]').value);
+                formData.append('results', JSON.stringify(results)); // JSON形式で送信
+
+                fetch('/save', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Server response:', data); // サーバーからの応答を確認
+                    alert(data.message || '保存が成功しました');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('エラーが発生しました');
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const keyword = "{{ keyword }}"; // ここに検索キーワードを挿入
+            if (keyword) {
+                document.querySelectorAll('.line-content').forEach(cell => {
+                    const content = cell.innerText;
+                    const regex = new RegExp(`(${keyword})`, 'gi');
+                    const highlighted = content.replace(regex, '<span style="color: red;">$1</span>');
+                    cell.innerHTML = highlighted; // 置き換え後の内容を挿入
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const keyword = "{{ keyword }}"; // ここに検索キーワードを挿入
+
+            document.getElementById('exportCSV').addEventListener('click', function () {
+                const rows = [['#', 'File Path', 'Line Number', 'Function Declaration', 'Line Content', 'User Notes']];
+                
+                // テーブルデータを収集
+                document.querySelectorAll('table tbody tr').forEach(row => {
+                    const rowData = [
+                        row.querySelector('td:nth-child(1)').innerText, // #
+                        row.querySelector('.file-path').innerText, // File Path
+                        row.querySelector('.line-number').innerText, // Line Number
+                        row.querySelector('.function-declaration').innerText, // Function Declaration
+                        row.querySelector('.line-content').innerText, // Line Content
+                        row.querySelector('.user-notes input').value // User Notes
+                    ];
+                    rows.push(rowData);
+                });
+
+                // CSVコンテンツ生成
+                const csvContent = rows.map(r => r.map(value => `"${value}"`).join(',')).join('\n');
+
+                // CSVファイルを作成してダウンロード
+                const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'GrepExport_' + keyword + '.csv';
+                link.click();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Grep 結果確認画面</h1>
+        <form id="saveForm" method="post">
+            <input type="hidden" name="keyword" value="{{ keyword }}">
+            <input type="hidden" name="repo_path" value="{{ repo_path }}">
+            <input type="hidden" name="file_type_include" value="{{ file_type_include }}">
+            <input type="hidden" name="file_type_exclude" value="{{ file_type_exclude }}">
+            <h2>検索条件</h2>
+            <p><strong>キーワード:</strong> {{ keyword }}</p>
+            <p><strong>リポジトリパス:</strong> {{ repo_path }}</p>
+            <p><strong>対象拡張子:</strong> {{ file_type_include }}</p>
+            <p><strong>対象外拡張子:</strong> {{ file_type_exclude }}</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>File Path</th>
+                        <th>Line Number</th>
+                        <th>Function Declaration</th>
+                        <th>Line Content</th>
+                        <th>User Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td class="file-path">
+                            <a href="/file?path={{ result.file_path }}&keyword={{ keyword }}&repo_path={{ repo_path }}&file_type_include={{ file_type_include }}&file_type_exclude={{ file_type_exclude }}" 
+                               target="_blank" 
+                               onclick="sessionStorage.setItem('clickedRow', '{{ loop.index }}');">
+                                {{ result.file_path }}
+                            </a>
+                        </td>
+                        <td class="line-number">{{ result.line_number }}</td>
+                        <td class="function-declaration">{{ result.function_declaration }}</td>
+                        <td class="line-content">{{ result.line_content }}</td>
+                        <td class="user-notes">
+                            <input type="text" value="{{ result.user_notes }}">
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div class="button-container"></div>
+            <button type="submit">保存</button>
+            <button id="exportCSV">CSVとしてエクスポート</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -30,13 +30,17 @@
     <form action="/grep" method="post">
         <input type="hidden" id="keyword" name="keyword" value="{{ keyword }}" />
         <input type="hidden" id="repo_path" name="repo_path" value="{{ repo_path }}" />
+        <input type="hidden" name="file_type_include" value="{{ file_type_include }}">
+        <input type="hidden" name="file_type_exclude" value="{{ file_type_exclude }}">
 
         <h1>File Content Viewer</h1>
         <div class="file-path">
             <h2>検索条件</h2>
             <p>キーワード: {{ keyword }}</p>
             <p>リポジトリパス: {{ repo_path }}</p>
-            <p>Viewing file: <strong>{{ file_path }}</strong></p>
+            <p><strong>対象拡張子:</strong> {{ file_type_include }}</p>
+            <p><strong>対象外拡張子:</strong> {{ file_type_exclude }}</p>           
+            <p>■Viewing file: <strong>{{ file_path }}</strong></p>
         </div>
         <pre>{{ content }}</pre>
         <br>
