@@ -32,29 +32,48 @@ def find_function_declaration(file_path, line_number):
         print(f"Error reading file {file_path}: {e}")
     return "Unknown Function Declaration"
 
-def search_keyword_in_repository(repo_path, keyword, file_type_include, file_type_exclude):
+import os
+import re
+
+def search_keyword_in_repository(repo_path, keyword, file_type_include=None, file_type_exclude=None):
+
+    # 対象拡張子と対象外拡張子をリストに変換
+    include_exts = set(ext.strip().lower() for ext in (file_type_include or "").split(",") if ext.strip())
+    exclude_exts = set(ext.strip().lower() for ext in (file_type_exclude or "").split(",") if ext.strip())
+    
+    # ノートの読み込み（既存の関数）
     notes = {f"{note['file_path']}:{note['line_number']}": note["user_notes"] for note in load_notes(keyword)}
     results = []
 
+    # ファイルの再帰的検索
     for root, dirs, files in os.walk(repo_path):
         for file in files:
-            if file.endswith(".py"):
-                file_path = os.path.join(root, file)
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        for line_number, line in enumerate(f, start=1):
-                            if re.search(keyword, line):
-                                key = f"{file_path}:{line_number}"
-                                results.append({
-                                    "file_path": file_path,
-                                    "line_number": line_number,
-                                    "function_declaration": find_function_declaration(file_path, line_number),
-                                    "line_content": line.strip(),
-                                    "user_notes": notes.get(key, "")
-                                })
-                except (UnicodeDecodeError, PermissionError):
-                    continue
+            file_ext = os.path.splitext(file)[1].lower()  # 拡張子を取得
+            
+            # include と exclude の条件をチェック
+            if include_exts and file_ext not in include_exts:
+                continue
+            if file_ext in exclude_exts:
+                continue
+
+            file_path = os.path.join(root, file)
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    for line_number, line in enumerate(f, start=1):
+                        if re.search(keyword, line):
+                            key = f"{file_path}:{line_number}"
+                            results.append({
+                                "file_path": file_path,
+                                "line_number": line_number,
+                                "function_declaration": find_function_declaration(file_path, line_number),
+                                "line_content": line.strip(),
+                                "user_notes": notes.get(key, "")
+                            })
+            except (UnicodeDecodeError, PermissionError):
+                continue
+
     return results
+
 
 def read_file_content_with_line_numbers(file_path):
     try:
