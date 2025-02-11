@@ -1,0 +1,1665 @@
+{
+    "keyword": "csv",
+    "repo_path": "/Users/yuta/my_github",
+    "results": [
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 2,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"keyword\": \"csv\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 6,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 9,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 13,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 16,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"import csv\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 20,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 23,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 27,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 30,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"def write_to_csv(parsed_data, output_file):\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 34,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 37,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 41,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 44,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"writer = csv.writer(file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 48,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 51,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 55,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 58,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"reader = csv.reader(file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 62,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 65,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 69,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 72,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"def write_to_output_csv(output_file, result_data):\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 76,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 79,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 83,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 86,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"writer = csv.writer(file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 90,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 93,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 97,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 100,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"reader = csv.reader(file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 104,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 107,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 111,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 114,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"output_file = \\\\\\\\\\\\\\\"commit_history.csv\\\\\\\\\\\\\\\" # 出力するCSVファイル名\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 118,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 121,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 125,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 128,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"write_to_csv(parsed_data, output_file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 132,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 135,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 139,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 142,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"input_file = \\\\\\\\\\\\\\\"commit_history.csv\\\\\\\\\\\\\\\" # 入力CSVファイル名\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 146,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 149,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 153,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 156,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"output_file = \\\\\\\\\\\\\\\"file_update_summary.csv\\\\\\\\\\\\\\\" # 出力CSVファイル名\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 160,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 163,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 167,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 170,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"write_to_output_csv(output_file, result_data)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 174,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 177,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 181,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 184,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"process_file_update_summary(\\\\\\\\\\\\\\\"file_update_summary.csv\\\\\\\\\\\\\\\", repo_path)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 188,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 191,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"file_path\\\": \\\"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 195,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 198,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"data = pd.read_csv(\\\\\\\\\\\\\\\"inquiries.csv\\\\\\\\\\\\\\\") # ファイル名を適宜変更\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 202,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 205,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"def write_to_csv(parsed_data, output_file):\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 209,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 212,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"reader = csv.reader(file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 216,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 219,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"def write_to_output_csv(output_file, result_data):\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 223,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 226,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"reader = csv.reader(file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 230,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 233,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"write_to_csv(parsed_data, output_file)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 237,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 240,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"output_file = \\\\\\\\\\\\\\\"file_update_summary.csv\\\\\\\\\\\\\\\" # 出力CSVファイル名\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 244,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 247,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"write_to_output_csv(output_file, result_data)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 251,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 254,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"process_file_update_summary(\\\\\\\\\\\\\\\"file_update_summary.csv\\\\\\\\\\\\\\\", repo_path)\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 258,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 261,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"\\\\\\\"line_content\\\\\\\": \\\\\\\"data = pd.read_csv(\\\\\\\\\\\\\\\"inquiries.csv\\\\\\\\\\\\\\\") # ファイル名を適宜変更\\\\\\\",\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 265,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 268,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"csv, .java\\\\\\\">\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 272,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"\\\\\\\"function_declaration\\\\\\\": \\\\\\\"if re.search(r'\\\\\\\\\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\\\\\\\\\b.*\\\\\\\\\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\\\\\\\\\b', lines[i]):\\\\\\\",\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 275,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"const csvContent = rows.map(r => r.map(value => `\\\\\\\"${value}\\\\\\\"`).join(',')).join('\\\\\\\\n');\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 279,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 282,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 286,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 289,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"link.download = 'GrepExport_' + keyword + '.csv';\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 293,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 296,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"const csvContent = rows.map(r => r.map(value => `\\\\\\\"${value}\\\\\\\"`).join(',')).join('\\\\\\\\n');\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 300,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 303,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 307,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 310,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"link.download = 'GrepExport_' + keyword + '.csv';\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 314,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 317,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"import csv\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 321,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 324,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_csv(parsed_data, output_file):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 328,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 331,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"writer = csv.writer(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 335,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 338,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 342,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 345,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_output_csv(output_file, result_data):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 349,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 352,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"writer = csv.writer(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 356,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 359,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 363,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 366,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"output_file = \\\\\\\"commit_history.csv\\\\\\\" # 出力するCSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 370,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 373,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_csv(parsed_data, output_file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 377,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 380,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"input_file = \\\\\\\"commit_history.csv\\\\\\\" # 入力CSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 384,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 387,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"output_file = \\\\\\\"file_update_summary.csv\\\\\\\" # 出力CSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 391,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 394,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_output_csv(output_file, result_data)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 398,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 401,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"process_file_update_summary(\\\\\\\"file_update_summary.csv\\\\\\\", repo_path)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 405,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 408,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"<link rel=\\\\\\\"stylesheet\\\\\\\" href=\\\\\\\"{{ url_for('static', filename='results_styles.css') }}\\\\\\\">\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"data = pd.read_csv(\\\\\\\"inquiries.csv\\\\\\\") # ファイル名を適宜変更\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 415,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_csv(parsed_data, output_file):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 422,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 429,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_output_csv(output_file, result_data):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 436,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 443,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_csv(parsed_data, output_file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 450,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"output_file = \\\\\\\"file_update_summary.csv\\\\\\\" # 出力CSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 457,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_output_csv(output_file, result_data)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 464,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"process_file_update_summary(\\\\\\\"file_update_summary.csv\\\\\\\", repo_path)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 471,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"data = pd.read_csv(\\\\\\\"inquiries.csv\\\\\\\") # ファイル名を適宜変更\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 478,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const csvContent = rows.map(r => r.map(value => `\\\"${value}\\\"`).join(',')).join('\\\\n');\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 485,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 492,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"link.download = 'GrepExport_' + keyword + '.csv';\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 499,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"csv, .java\\\">\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 506,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const csvContent = rows.map(r => r.map(value => `\\\"${value}\\\"`).join(',')).join('\\\\n');\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 513,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 520,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"link.download = 'GrepExport_' + keyword + '.csv';\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 527,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"csv, .java\\\">\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 534,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"import csv\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 541,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"def write_to_csv(parsed_data, output_file):\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 548,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"writer = csv.writer(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 555,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"reader = csv.reader(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 562,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"def write_to_output_csv(output_file, result_data):\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 569,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"writer = csv.writer(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 576,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"reader = csv.reader(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 583,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"output_file = \\\"commit_history.csv\\\" # 出力するCSVファイル名\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 590,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"write_to_csv(parsed_data, output_file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 597,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"input_file = \\\"commit_history.csv\\\" # 入力CSVファイル名\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 604,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"output_file = \\\"file_update_summary.csv\\\" # 出力CSVファイル名\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 611,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"write_to_output_csv(output_file, result_data)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 618,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"process_file_update_summary(\\\"file_update_summary.csv\\\", repo_path)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/saved_results.json",
+            "line_number": 625,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"data = pd.read_csv(\\\"inquiries.csv\\\") # ファイル名を適宜変更\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 3,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 6,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"import csv\\\",\",",
+            "user_notes": "あああ"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 10,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 13,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_csv(parsed_data, output_file):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 17,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 20,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"writer = csv.writer(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 24,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 27,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 31,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 34,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_output_csv(output_file, result_data):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 38,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 41,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"writer = csv.writer(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 45,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 48,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 52,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 55,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"output_file = \\\\\\\"commit_history.csv\\\\\\\" # 出力するCSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 59,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 62,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_csv(parsed_data, output_file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 66,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 69,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"input_file = \\\\\\\"commit_history.csv\\\\\\\" # 入力CSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 73,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 76,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"output_file = \\\\\\\"file_update_summary.csv\\\\\\\" # 出力CSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 80,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 83,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_output_csv(output_file, result_data)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 87,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 90,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"process_file_update_summary(\\\\\\\"file_update_summary.csv\\\\\\\", repo_path)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 94,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"file_path\": \"/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 97,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"data = pd.read_csv(\\\\\\\"inquiries.csv\\\\\\\") # ファイル名を適宜変更\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 104,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_csv(parsed_data, output_file):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 111,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 118,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"def write_to_output_csv(output_file, result_data):\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 125,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"reader = csv.reader(file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 132,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_csv(parsed_data, output_file)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 139,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"output_file = \\\\\\\"file_update_summary.csv\\\\\\\" # 出力CSVファイル名\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 146,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"write_to_output_csv(output_file, result_data)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 153,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"process_file_update_summary(\\\\\\\"file_update_summary.csv\\\\\\\", repo_path)\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 160,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"\\\"line_content\\\": \\\"data = pd.read_csv(\\\\\\\"inquiries.csv\\\\\\\") # ファイル名を適宜変更\\\",\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 167,
+            "function_declaration": "\"function_declaration\": \"\\\"function_declaration\\\": \\\"if re.search(r'\\\\\\\\b(public|private|protected|static|abstract)\\\\\\\\b.*\\\\\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\\\\\b', lines[i]):\\\",\",",
+            "line_content": "\"line_content\": \"csv, .java\\\">\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 174,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const csvContent = rows.map(r => r.map(value => `\\\"${value}\\\"`).join(',')).join('\\\\n');\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 181,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 188,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"link.download = 'GrepExport_' + keyword + '.csv';\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 195,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const csvContent = rows.map(r => r.map(value => `\\\"${value}\\\"`).join(',')).join('\\\\n');\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 202,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 209,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"link.download = 'GrepExport_' + keyword + '.csv';\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 216,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"import csv\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 223,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"def write_to_csv(parsed_data, output_file):\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 230,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"writer = csv.writer(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 237,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"reader = csv.reader(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 244,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"def write_to_output_csv(output_file, result_data):\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 251,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"writer = csv.writer(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 258,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"reader = csv.reader(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 265,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"output_file = \\\"commit_history.csv\\\" # 出力するCSVファイル名\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 272,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"write_to_csv(parsed_data, output_file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 279,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"input_file = \\\"commit_history.csv\\\" # 入力CSVファイル名\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 286,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"output_file = \\\"file_update_summary.csv\\\" # 出力CSVファイル名\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 293,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"write_to_output_csv(output_file, result_data)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 300,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"process_file_update_summary(\\\"file_update_summary.csv\\\", repo_path)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_csv.json",
+            "line_number": 307,
+            "function_declaration": "\"function_declaration\": \"<link rel=\\\"stylesheet\\\" href=\\\"{{ url_for('static', filename='results_styles.css') }}\\\">\",",
+            "line_content": "\"line_content\": \"data = pd.read_csv(\\\"inquiries.csv\\\") # ファイル名を適宜変更\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2344,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"def write_to_csv(parsed_data, output_file):\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2393,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"reader = csv.reader(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2491,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"def write_to_output_csv(output_file, result_data):\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2617,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"reader = csv.reader(file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2708,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"write_to_csv(parsed_data, output_file)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2722,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"output_file = \\\"file_update_summary.csv\\\" # 出力CSVファイル名\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2743,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"write_to_output_csv(output_file, result_data)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2771,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"process_file_update_summary(\\\"file_update_summary.csv\\\", repo_path)\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/notes/notes_a.json",
+            "line_number": 2827,
+            "function_declaration": "\"function_declaration\": \"if re.search(r'\\\\b(public|private|protected|static|abstract)\\\\b.*\\\\b(class|interface|void|[a-zA-Z_][a-zA-Z0-9_]*)\\\\b', lines[i]):\",",
+            "line_content": "\"line_content\": \"data = pd.read_csv(\\\"inquiries.csv\\\") # ファイル名を適宜変更\",",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/results_v10.html",
+            "line_number": 42,
+            "function_declaration": "<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='results_styles.css') }}\">",
+            "line_content": "const csvContent = rows.map(r => r.map(value => `\"${value}\"`).join(',')).join('\\n');",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/results_v10.html",
+            "line_number": 45,
+            "function_declaration": "<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='results_styles.css') }}\">",
+            "line_content": "const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/results_v10.html",
+            "line_number": 48,
+            "function_declaration": "<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='results_styles.css') }}\">",
+            "line_content": "link.download = 'GrepExport_' + keyword + '.csv';",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/input_v9.html",
+            "line_number": 68,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "csv, .java\">",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/results_v9.html",
+            "line_number": 91,
+            "function_declaration": "<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='results_styles.css') }}\">",
+            "line_content": "const csvContent = rows.map(r => r.map(value => `\"${value}\"`).join(',')).join('\\n');",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/results_v9.html",
+            "line_number": 94,
+            "function_declaration": "<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='results_styles.css') }}\">",
+            "line_content": "const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/results_v9.html",
+            "line_number": 97,
+            "function_declaration": "<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='results_styles.css') }}\">",
+            "line_content": "link.download = 'GrepExport_' + keyword + '.csv';",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/search_impact/templates/input_v10.html",
+            "line_number": 68,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "csv, .java\">",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 2,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "import csv",
+            "user_notes": "12345a"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 46,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "def write_to_csv(parsed_data, output_file):",
+            "user_notes": "bb123"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 49,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "writer = csv.writer(file)",
+            "user_notes": "ccc"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 57,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "reader = csv.reader(file)",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 76,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "def write_to_output_csv(output_file, result_data):",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 79,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "writer = csv.writer(file)",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 105,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "reader = csv.reader(file)",
+            "user_notes": "あああ"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 116,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "output_file = \"commit_history.csv\" # 出力するCSVファイル名",
+            "user_notes": "aaa"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 126,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "write_to_csv(parsed_data, output_file)",
+            "user_notes": "a"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 131,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "input_file = \"commit_history.csv\" # 入力CSVファイル名",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 132,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "output_file = \"file_update_summary.csv\" # 出力CSVファイル名",
+            "user_notes": "test"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 136,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "write_to_output_csv(output_file, result_data)",
+            "user_notes": "aa"
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/getGithubCommitInfo/getCommitHistories_v8.py",
+            "line_number": 144,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "process_file_update_summary(\"file_update_summary.csv\", repo_path)",
+            "user_notes": ""
+        },
+        {
+            "file_path": "/Users/yuta/my_github/MaruoTools/inquiry_assistant/inquiry_assistant_v1.py",
+            "line_number": 13,
+            "function_declaration": "Unknown Function Declaration",
+            "line_content": "data = pd.read_csv(\"inquiries.csv\") # ファイル名を適宜変更",
+            "user_notes": "0987"
+        }
+    ]
+}
