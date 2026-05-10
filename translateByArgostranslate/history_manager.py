@@ -43,6 +43,10 @@ class HistoryManager:
         with open(self.history_path, 'w', encoding='utf-8') as f:
             json.dump(self.history, f, ensure_ascii=False, indent=2)
 
+    def save_config(self):
+        with open(self.config_path, 'w', encoding='utf-8') as f:
+            json.dump(self.config, f, ensure_ascii=False, indent=2)
+
     def clear_history(self):
         self.history = []
         self.save_history()
