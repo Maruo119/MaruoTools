@@ -4,6 +4,8 @@ import shutil
 from pathlib import Path
 import socket
 import time
+import urllib.request
+import urllib.error
 
 def check_models_installed():
     """Check if required translation models are installed."""
@@ -27,12 +29,14 @@ def reset_models():
     except Exception as e:
         raise RuntimeError(f"Failed to reset models: {e}")
 
-def _check_network_connectivity(host="8.8.8.8", port=53, timeout=3):
-    """Check if network connection is available."""
+def _check_network_connectivity(timeout=5):
+    """Check if network connection is available by attempting HTTP request."""
     try:
-        socket.setdefaulttimeout(timeout)
-        socket.socket(socket.AF_INET, socket.SOCK_DGRAM).connect((host, port))
+        req = urllib.request.Request("https://www.google.com", method="HEAD", timeout=timeout)
+        urllib.request.urlopen(req)
         return True
+    except urllib.error.URLError as e:
+        return False
     except Exception:
         return False
 
@@ -40,13 +44,13 @@ def download_models():
     """Download required translation models."""
     try:
         if not _check_network_connectivity():
-            raise RuntimeError("Network connection is not available")
+            raise RuntimeError("ネットワーク接続がありません。インターネット接続を確認してください。")
 
         argostranslate.package.update_package_index()
         available_packages = argostranslate.package.get_available_packages()
 
         if not available_packages:
-            raise RuntimeError("Failed to fetch package list from server")
+            raise RuntimeError("サーバーからパッケージリストを取得できませんでした。ネットワーク接続を確認してください。")
 
         ja_en_package = next(
             filter(lambda x: x.from_code == "ja" and x.to_code == "en", available_packages),
@@ -58,14 +62,18 @@ def download_models():
         )
 
         if not ja_en_package or not en_ja_package:
-            raise RuntimeError("Required translation packages not found")
+            raise RuntimeError("必要な翻訳パッケージが見つかりません。")
 
         argostranslate.package.install_from_path(ja_en_package.download())
         argostranslate.package.install_from_path(en_ja_package.download())
 
         return True
+    except urllib.error.URLError as e:
+        raise RuntimeError(f"ネットワーク通信エラー: インターネット接続を確認してください。")
     except Exception as e:
-        raise RuntimeError(f"Model download failed: {e}")
+        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
+            raise RuntimeError(f"ネットワーク通信エラー: インターネット接続を確認してください。")
+        raise RuntimeError(f"モデルダウンロード失敗: {e}")
 
 def preload_models():
     """Preload models into memory to avoid first-use delay."""
@@ -80,20 +88,32 @@ def preload_models():
 def translate_ja_to_en(text):
     try:
         return argostranslate.translate.translate(text, "ja", "en")
+    except urllib.error.URLError as e:
+        raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
     except Exception as e:
-        raise RuntimeError(f"Translation failed: {e}")
+        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
+            raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
+        raise RuntimeError(f"翻訳失敗: {e}")
 
 def translate_eng_to_jpn(text):
     try:
         return argostranslate.translate.translate(text, "en", "ja")
+    except urllib.error.URLError as e:
+        raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
     except Exception as e:
-        raise RuntimeError(f"Translation failed: {e}")
+        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
+            raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
+        raise RuntimeError(f"翻訳失敗: {e}")
 
 def translate(text, src_lang, dest_lang):
     try:
         return argostranslate.translate.translate(text, src_lang, dest_lang)
+    except urllib.error.URLError as e:
+        raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
     except Exception as e:
-        raise RuntimeError(f"Translation failed: {e}")
+        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
+            raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
+        raise RuntimeError(f"翻訳失敗: {e}")
 
 if __name__ == "__main__":
     print(translate_ja_to_en("もし「どうしても言い換えまで自動化したい、でもセキュリティが心配」という場合は、やはり「Javaでの機械的チェック」と「ローカルLLM（Ollama）でのリライト」の二段構えが最強です。"))
