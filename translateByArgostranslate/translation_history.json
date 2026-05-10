@@ -1,0 +1,20 @@
+[
+  {
+    "id": "2026-05-10T21:31:55.884345",
+    "direction": "jpn_to_eng",
+    "source": "一段目（Java）: 凡ミスを徹底的に排除する（ガードレール）。\n\n二段目（ローカルLLM）: 「この報告書を、部長に送るための丁寧な表現にして」と投げる。",
+    "translation": "FirstJava (Java): Thoroughly eliminates legends (guard rail).\n\nSecond stage (local LLM): “This report will be sent to the manager and it will be a polite representation.”"
+  },
+  {
+    "id": "2026-05-10T21:31:47.768219",
+    "direction": "jpn_to_eng",
+    "source": "もし「どうしても言い換えまで自動化したい、でもセキュリティが心配」という場合は、やはり「Javaでの機械的チェック」と「ローカルLLM（Ollama）でのリライト」の二段構えが最強です。",
+    "translation": "If you want to automate everything in other words, but you are worried about security, you should have two steps: “Mechanical check in Java” and “Relight in Local LLM (Ollama)”."
+  },
+  {
+    "id": "2026-05-10T21:31:30.106599",
+    "direction": "jpn_to_eng",
+    "source": "GUI が起動する\n日本語入力 → Jpn⇒Eng → 英語が右側に表示される\n英語入力 → Eng⇒Jpn → 日本語が左側に表示される\nコピーボタンでクリップボード操作が機能\n履歴に最新3件が表示される\n履歴をクリックで元の翻訳内容が復元される\n何か問題が発生した場合はお知らせください。",
+    "translation": "Start GUI\nJapanese input → Jpn⇒Eng → English is displayed on the right side\nEnglish →が⇒Jpn → Japanese is displayed on the left side\nClipboard operation function by copy button\n3 of the latest in history\nClick history to restore the original translation\nPlease let us know if you have any problems."
+  }
+]
