@@ -3,7 +3,7 @@ from tkinter import scrolledtext, messagebox
 import os
 import sys
 import threading
-from translate_executor import translate_ja_to_en, translate_eng_to_jpn, check_models_installed, download_models, reset_models
+from translate_executor import translate_ja_to_en, translate_eng_to_jpn, check_models_installed, download_models, reset_models, preload_models
 from history_manager import HistoryManager
 
 class TranslateGUI(tk.Tk):
@@ -102,6 +102,7 @@ class TranslateGUI(tk.Tk):
         self.history_listbox.bind('<<ListboxSelect>>', self.on_history_select)
 
         self.refresh_history()
+        self.preload_models_async()
 
     def on_jpn_to_eng(self):
         if not check_models_installed():
@@ -245,6 +246,12 @@ class TranslateGUI(tk.Tk):
         finally:
             self.reset_button.config(state=tk.NORMAL, text="モデルをリセット")
             self.update_model_status()
+
+    def preload_models_async(self):
+        threading.Thread(target=self._preload_models_thread, daemon=True).start()
+
+    def _preload_models_thread(self):
+        preload_models()
 
     def _on_closing(self):
         font_size = int(self.font_size_scale.get())

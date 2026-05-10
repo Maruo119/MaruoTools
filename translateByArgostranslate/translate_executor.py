@@ -2,6 +2,8 @@ import argostranslate.translate
 import argostranslate.package
 import shutil
 from pathlib import Path
+import socket
+import time
 
 def check_models_installed():
     """Check if required translation models are installed."""
@@ -25,11 +27,26 @@ def reset_models():
     except Exception as e:
         raise RuntimeError(f"Failed to reset models: {e}")
 
+def _check_network_connectivity(host="8.8.8.8", port=53, timeout=3):
+    """Check if network connection is available."""
+    try:
+        socket.setdefaulttimeout(timeout)
+        socket.socket(socket.AF_INET, socket.SOCK_DGRAM).connect((host, port))
+        return True
+    except Exception:
+        return False
+
 def download_models():
     """Download required translation models."""
     try:
+        if not _check_network_connectivity():
+            raise RuntimeError("Network connection is not available")
+
         argostranslate.package.update_package_index()
         available_packages = argostranslate.package.get_available_packages()
+
+        if not available_packages:
+            raise RuntimeError("Failed to fetch package list from server")
 
         ja_en_package = next(
             filter(lambda x: x.from_code == "ja" and x.to_code == "en", available_packages),
@@ -40,15 +57,25 @@ def download_models():
             None
         )
 
-        if ja_en_package:
-            argostranslate.package.install_from_path(ja_en_package.download())
+        if not ja_en_package or not en_ja_package:
+            raise RuntimeError("Required translation packages not found")
 
-        if en_ja_package:
-            argostranslate.package.install_from_path(en_ja_package.download())
+        argostranslate.package.install_from_path(ja_en_package.download())
+        argostranslate.package.install_from_path(en_ja_package.download())
 
         return True
     except Exception as e:
         raise RuntimeError(f"Model download failed: {e}")
+
+def preload_models():
+    """Preload models into memory to avoid first-use delay."""
+    try:
+        if check_models_installed():
+            argostranslate.translate.translate("", "ja", "en")
+            argostranslate.translate.translate("", "en", "ja")
+        return True
+    except Exception:
+        return False
 
 def translate_ja_to_en(text):
     try:
