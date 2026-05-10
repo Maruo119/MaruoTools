@@ -20,3 +20,7 @@ Thumbs.db
 
 # User notes
 *memo*.md
+
+# Application generated files
+translation_history.json
+config.json

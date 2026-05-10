@@ -1,5 +1,7 @@
 import argostranslate.translate
 import argostranslate.package
+import shutil
+from pathlib import Path
 
 def check_models_installed():
     """Check if required translation models are installed."""
@@ -10,6 +12,18 @@ def check_models_installed():
         return has_ja_en and has_en_ja
     except Exception as e:
         raise RuntimeError(f"Failed to check models: {e}")
+
+def reset_models():
+    """Clear model cache to reset to uninstalled state."""
+    try:
+        installed_packages = argostranslate.package.get_installed_packages()
+        for pkg in installed_packages:
+            pkg_path = Path(pkg.package_path)
+            if pkg_path.exists():
+                shutil.rmtree(pkg_path)
+        return True
+    except Exception as e:
+        raise RuntimeError(f"Failed to reset models: {e}")
 
 def download_models():
     """Download required translation models."""

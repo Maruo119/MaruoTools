@@ -3,7 +3,7 @@ from tkinter import scrolledtext, messagebox
 import os
 import sys
 import threading
-from translate_executor import translate_ja_to_en, translate_eng_to_jpn, check_models_installed, download_models
+from translate_executor import translate_ja_to_en, translate_eng_to_jpn, check_models_installed, download_models, reset_models
 from history_manager import HistoryManager
 
 class TranslateGUI(tk.Tk):
@@ -51,6 +51,9 @@ class TranslateGUI(tk.Tk):
 
         self.download_button = tk.Button(model_frame, text="モデルをダウンロード", command=self.on_download_models, width=20)
         self.download_button.pack(side=tk.LEFT, padx=(0, 5))
+
+        self.reset_button = tk.Button(model_frame, text="モデルをリセット", command=self.on_reset_models, width=15)
+        self.reset_button.pack(side=tk.LEFT, padx=(0, 5))
 
         self.update_model_status()
 
@@ -223,6 +226,24 @@ class TranslateGUI(tk.Tk):
             messagebox.showerror("エラー", f"ダウンロードに失敗しました: {e}")
         finally:
             self.download_button.config(state=tk.NORMAL, text="モデルをダウンロード")
+            self.update_model_status()
+
+    def on_reset_models(self):
+        if not messagebox.askyesno("確認", "モデルをリセットしますか？\nモデルをダウンロードし直す必要があります。"):
+            return
+
+        self.reset_button.config(state=tk.DISABLED, text="リセット中...")
+        threading.Thread(target=self._reset_models_thread, daemon=True).start()
+
+    def _reset_models_thread(self):
+        try:
+            reset_models()
+            self.model_status_label.config(text="モデル: ⚠ 未インストール", fg="red")
+            messagebox.showinfo("完了", "モデルをリセットしました")
+        except Exception as e:
+            messagebox.showerror("エラー", f"リセットに失敗しました: {e}")
+        finally:
+            self.reset_button.config(state=tk.NORMAL, text="モデルをリセット")
             self.update_model_status()
 
     def _on_closing(self):
