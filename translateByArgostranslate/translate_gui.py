@@ -12,6 +12,8 @@ class TranslateGUI(tk.Tk):
         self.title("オフライン翻訳ツール")
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
+        icon_path = os.path.join(script_dir, "app_icon.ico")
+        self.iconbitmap(icon_path)
         self.config_path = os.path.join(script_dir, "config.json")
         self.history_path = os.path.join(script_dir, "translation_history.json")
 
