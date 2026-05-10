@@ -68,11 +68,11 @@ def download_models():
         argostranslate.package.install_from_path(en_ja_package.download())
 
         return True
+    except RuntimeError:
+        raise
     except urllib.error.URLError as e:
-        raise RuntimeError(f"ネットワーク通信エラー: インターネット接続を確認してください。")
+        raise RuntimeError("ネットワーク通信エラー: インターネット接続を確認してください。")
     except Exception as e:
-        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
-            raise RuntimeError(f"ネットワーク通信エラー: インターネット接続を確認してください。")
         raise RuntimeError(f"モデルダウンロード失敗: {e}")
 
 def preload_models():
@@ -91,8 +91,6 @@ def translate_ja_to_en(text):
     except urllib.error.URLError as e:
         raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
     except Exception as e:
-        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
-            raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
         raise RuntimeError(f"翻訳失敗: {e}")
 
 def translate_eng_to_jpn(text):
@@ -101,8 +99,6 @@ def translate_eng_to_jpn(text):
     except urllib.error.URLError as e:
         raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
     except Exception as e:
-        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
-            raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
         raise RuntimeError(f"翻訳失敗: {e}")
 
 def translate(text, src_lang, dest_lang):
@@ -111,8 +107,6 @@ def translate(text, src_lang, dest_lang):
     except urllib.error.URLError as e:
         raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
     except Exception as e:
-        if "getaddrinfo failed" in str(e) or "URLError" in str(type(e).__name__):
-            raise RuntimeError("ネットワーク通信エラー: オフライン翻訳環境では外部リソースにアクセスできません。")
         raise RuntimeError(f"翻訳失敗: {e}")
 
 if __name__ == "__main__":
