@@ -2,7 +2,8 @@ import tkinter as tk
 from tkinter import scrolledtext, messagebox
 import os
 import sys
-from translate_executor import translate_ja_to_en, translate_eng_to_jpn
+import threading
+from translate_executor import translate_ja_to_en, translate_eng_to_jpn, check_models_installed, download_models, reset_models, preload_models
 from history_manager import HistoryManager
 
 class TranslateGUI(tk.Tk):
@@ -41,6 +42,20 @@ class TranslateGUI(tk.Tk):
                                              textvariable=self.history_max_var, command=self.on_history_max_change)
         self.history_max_spinbox.pack(side=tk.LEFT, padx=(0, 5))
         tk.Label(config_frame, text="件").pack(side=tk.LEFT)
+
+        model_frame = tk.Frame(main_frame)
+        model_frame.pack(fill=tk.X, pady=(0, 10))
+
+        self.model_status_label = tk.Label(model_frame, text="モデル: 確認中...", fg="gray")
+        self.model_status_label.pack(side=tk.LEFT, padx=(0, 10))
+
+        self.download_button = tk.Button(model_frame, text="モデルをダウンロード", command=self.on_download_models, width=20)
+        self.download_button.pack(side=tk.LEFT, padx=(0, 5))
+
+        self.reset_button = tk.Button(model_frame, text="モデルをリセット", command=self.on_reset_models, width=15)
+        self.reset_button.pack(side=tk.LEFT, padx=(0, 5))
+
+        self.update_model_status()
 
         top_frame = tk.Frame(main_frame)
         top_frame.pack(fill=tk.BOTH, expand=True)
@@ -87,8 +102,13 @@ class TranslateGUI(tk.Tk):
         self.history_listbox.bind('<<ListboxSelect>>', self.on_history_select)
 
         self.refresh_history()
+        self.preload_models_async()
 
     def on_jpn_to_eng(self):
+        if not check_models_installed():
+            messagebox.showwarning("モデル未インストール", "モデルをダウンロードしてください")
+            return
+
         try:
             source = self.jpn_text.get("1.0", tk.END).strip()
             if not source:
@@ -103,6 +123,10 @@ class TranslateGUI(tk.Tk):
             messagebox.showerror("エラー", f"翻訳に失敗しました: {e}")
 
     def on_eng_to_jpn(self):
+        if not check_models_installed():
+            messagebox.showwarning("モデル未インストール", "モデルをダウンロードしてください")
+            return
+
         try:
             source = self.eng_text.get("1.0", tk.END).strip()
             if not source:
@@ -178,6 +202,56 @@ class TranslateGUI(tk.Tk):
         if messagebox.askyesno("確認", "翻訳履歴を削除してもよろしいですか？"):
             self.history_manager.clear_history()
             self.refresh_history()
+
+    def update_model_status(self):
+        try:
+            if check_models_installed():
+                self.model_status_label.config(text="モデル: ✓ インストール済み", fg="green")
+                self.download_button.config(state=tk.DISABLED)
+            else:
+                self.model_status_label.config(text="モデル: ⚠ 未インストール", fg="red")
+                self.download_button.config(state=tk.NORMAL)
+        except Exception as e:
+            self.model_status_label.config(text=f"モデル: エラー ({str(e)[:20]})", fg="red")
+
+    def on_download_models(self):
+        self.download_button.config(state=tk.DISABLED, text="ダウンロード中...")
+        threading.Thread(target=self._download_models_thread, daemon=True).start()
+
+    def _download_models_thread(self):
+        try:
+            download_models()
+            self.model_status_label.config(text="モデル: ✓ インストール済み", fg="green")
+            messagebox.showinfo("完了", "モデルのダウンロードが完了しました")
+        except Exception as e:
+            messagebox.showerror("エラー", f"ダウンロードに失敗しました: {e}")
+        finally:
+            self.download_button.config(state=tk.NORMAL, text="モデルをダウンロード")
+            self.update_model_status()
+
+    def on_reset_models(self):
+        if not messagebox.askyesno("確認", "モデルをリセットしますか？\nモデルをダウンロードし直す必要があります。"):
+            return
+
+        self.reset_button.config(state=tk.DISABLED, text="リセット中...")
+        threading.Thread(target=self._reset_models_thread, daemon=True).start()
+
+    def _reset_models_thread(self):
+        try:
+            reset_models()
+            self.model_status_label.config(text="モデル: ⚠ 未インストール", fg="red")
+            messagebox.showinfo("完了", "モデルをリセットしました")
+        except Exception as e:
+            messagebox.showerror("エラー", f"リセットに失敗しました: {e}")
+        finally:
+            self.reset_button.config(state=tk.NORMAL, text="モデルをリセット")
+            self.update_model_status()
+
+    def preload_models_async(self):
+        threading.Thread(target=self._preload_models_thread, daemon=True).start()
+
+    def _preload_models_thread(self):
+        preload_models()
 
     def _on_closing(self):
         font_size = int(self.font_size_scale.get())
