@@ -1,5 +1,5 @@
 {
-  "history_max_items": 3,
+  "history_max_items": 10,
   "window_width": 900,
   "window_height": 700,
   "font_size": 12
