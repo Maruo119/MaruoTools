@@ -3,12 +3,14 @@ from tkinter import scrolledtext, messagebox
 import os
 import sys
 import threading
+import ctypes
 from translate_executor import translate_ja_to_en, translate_eng_to_jpn, check_models_installed, download_models, reset_models, preload_models
 from history_manager import HistoryManager
 
 class TranslateGUI(tk.Tk):
     def __init__(self):
         super().__init__()
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("translatetool.1.0")
         self.title("オフライン翻訳ツール")
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
