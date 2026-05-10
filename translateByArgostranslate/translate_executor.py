@@ -29,16 +29,18 @@ def reset_models():
     except Exception as e:
         raise RuntimeError(f"Failed to reset models: {e}")
 
-def _check_network_connectivity(timeout=5):
-    """Check if network connection is available by attempting HTTP request."""
-    try:
-        req = urllib.request.Request("https://www.google.com", method="HEAD", timeout=timeout)
-        urllib.request.urlopen(req)
-        return True
-    except urllib.error.URLError as e:
-        return False
-    except Exception:
-        return False
+def _check_network_connectivity(timeout=3):
+    """Check if network connection is available by attempting DNS resolution."""
+    hosts = ["8.8.8.8", "1.1.1.1", "208.67.222.222"]
+
+    for host in hosts:
+        try:
+            socket.create_connection((host, 53), timeout=timeout)
+            return True
+        except (socket.timeout, socket.error, OSError):
+            continue
+
+    return False
 
 def download_models():
     """Download required translation models."""
